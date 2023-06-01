@@ -23,4 +23,8 @@ You should already be strong Java programmers and possibly also have Python expe
 It will not be hard to learn how to code effectively in Javascript, 
 especially if you are using Visual Studio Code with Github Copilot chat.
 
+## L02: Tuesday 6/6/2023 Setting up a local environment
+We work on downloading Visual Studio Code and the [Expo Go](https://reactnative.dev/docs/environment-setup?guide=quickstart) tools 
+we need to develop React Native apps locally.
+
 
