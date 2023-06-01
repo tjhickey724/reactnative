@@ -4,6 +4,14 @@ and is a supplement to our Latte pages which contain links to the
 zoom sessions, screen recordings, homework assignments, announcements,
 etc. This file simply records some of the content we discuss in class.
 
+We will be learning to use [React Native](https://reactnative.dev)  
+and [Expo](https://docs.expo.dev/) to develop mobile apps
+that can run on iOS and on Android devices. These tools have been used
+by many companies to create their apps. Here is a [Gallery](https://reactnative.dev/showcase).
+
+Expo is a nice tool as it provides an easy way to write and run apps on your phone
+using [all of the phones features](https://docs.expo.dev/versions/latest/).
+
 ## L01 Monday 6/5/2023 Setting up!
 We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
 [reactnative.dev](https://reactnative.dev) website.
