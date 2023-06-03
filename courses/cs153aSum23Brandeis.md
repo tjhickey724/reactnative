@@ -12,7 +12,7 @@ by many companies to create their apps. Here is a [Gallery](https://reactnative.
 Expo is a nice tool as it provides an easy way to write and run apps on your phone
 using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
-## L01 Monday 6/5/2023 Setting up!
+## Week 1
 We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
 [reactnative.dev](https://reactnative.dev) website.
 
@@ -23,8 +23,15 @@ You should already be strong Java programmers and possibly also have Python expe
 It will not be hard to learn how to code effectively in Javascript, 
 especially if you are using Visual Studio Code with Github Copilot chat.
 
-## L02: Tuesday 6/6/2023 Setting up a local environment
-We work on downloading Visual Studio Code and the [Expo Go](https://reactnative.dev/docs/environment-setup?guide=quickstart) tools 
-we need to develop React Native apps locally.
+We will work through the Getting Started tutorial at a superficial level,
+learning how to modify the code in the Snack IDE.
+
+We will then cycle back and  analyze the code line-by-line to obtain a deeper
+understanding both of Javascript and of React Native.
+
+By the end of the week everyone should be able to create simple interactive Mobile Apps
+and to explain how they work, line by line.
+
+
 
 
