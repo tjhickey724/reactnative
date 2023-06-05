@@ -13,6 +13,8 @@ Expo is a nice tool as it provides an easy way to write and run apps on your pho
 using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
 ## Week 1
+
+### Lesson 1 Mon 6/5/23
 We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
 [reactnative.dev](https://reactnative.dev) website.
 
@@ -26,7 +28,8 @@ especially if you are using Visual Studio Code with Github Copilot chat.
 We will work through the Getting Started tutorial at a superficial level,
 learning how to modify the code in the Snack IDE.
 
-We will then cycle back and  analyze the code line-by-line to obtain a deeper
+### Lesson 2 Tue 6/6/23
+We cycle back and  analyze the code line-by-line to obtain a deeper
 understanding both of Javascript and of React Native.
 
 By the end of the week everyone should be able to create simple interactive Mobile Apps
