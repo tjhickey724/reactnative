@@ -13,7 +13,9 @@ about the core components and focus on the following ones:
 * Stylesheet
 * Button
 * 
-Next we look at the style prop and especially the flex box properties.
+Next we look at the [style prop](https://reactnative.dev/docs/style) 
+and especially the flex box properties.
+
 Here is a cheat sheet with many of the style properties:
 https://github.com/vhpoet/react-native-styling-cheat-sheet
 
