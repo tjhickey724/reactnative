@@ -32,6 +32,8 @@ learning how to modify the code in the Snack IDE.
 We cycle back and  analyze the code line-by-line to obtain a deeper
 understanding both of Javascript and of React Native.
 
+Then we look at the Design document and learn [how to layout components nicely](../notes/component_layout.md) in React Native.
+
 By the end of the week everyone should be able to create simple interactive Mobile Apps
 and to explain how they work, line by line.
 
