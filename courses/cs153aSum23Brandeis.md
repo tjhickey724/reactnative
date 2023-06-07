@@ -37,6 +37,14 @@ Then we look at the Design document and learn [how to layout components nicely](
 By the end of the week everyone should be able to create simple interactive Mobile Apps
 and to explain how they work, line by line.
 
+### Lesson 3 Wed 6/7/23
+We showed how to setup the local environment to develop React Native apps using Visual Studio Code.
+Then we looked over some of the Javascript documentation
+
+### Lesson 4 Thu 6/8/23
+We show how to use the Stack Navigator to make a multi-page app.
+Then we discuss several approaches to pass data between components
+and we show how to create and access "Global Variables" in React.
 
 
 
