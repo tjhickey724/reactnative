@@ -42,14 +42,14 @@ We showed how to setup the local environment to develop React Native apps using 
 Then we looked over some of the Javascript documentation
 
 ### Lesson 4 Thu 6/8/23
-We show how to use the [React Navigation](https://reactnavigation.org/) to make a multi-page app.
+We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
 
-Then we discuss the relationaship between 
-* [React](https://react.dev) and 
-* [React Native](https://reactnative.dev), and
+We discuss the relationaship between three front end frameworks
+* [React](https://react.dev)
+* [React Native](https://reactnative.dev),
 * [Expo](https://docs.expo.dev/)
 
-Then we discuss several approaches to pass data between components using a Change Calculator demo
+We discuss several approaches to pass data between components using a Change Calculator demo
 
 Time permitting, we show how to create and access "Global Variables" in React.
 
