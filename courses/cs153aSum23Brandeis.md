@@ -47,7 +47,7 @@ We show how to use the [React Navigation](https://reactnavigation.org/) to make 
 Then we discuss the relationaship between 
 * [React](https://react.dev) and 
 * [React Native](https://reactnative.dev), and
-* [Expo] (https://docs.expo.dev/)
+* [Expo](https://docs.expo.dev/)
 
 Then we discuss several approaches to pass data between components using a Change Calculator demo
 
