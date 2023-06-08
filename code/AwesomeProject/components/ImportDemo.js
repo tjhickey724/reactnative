@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
    this shows how to import javascript functions
    from a module in the lib folder...
 */
-import sq,{cube} from './lib/mymath.js';
+import sq,{cube} from '../lib/mymath.js';
 
 export default function App() {
   return (
