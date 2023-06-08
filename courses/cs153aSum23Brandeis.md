@@ -49,6 +49,18 @@ We discuss the relationaship between three front end frameworks
 * [React Native](https://reactnative.dev),
 * [Expo](https://docs.expo.dev/)
 
+We show how to 
+* download/install [github desktop](https://desktop.github.com/)
+* create a [github account](https://github.com)
+* [setup github account](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/about-connections-to-github-in-github-desktop)
+* create a github repository with a .gitignore and a README.MD
+* download your github repository
+* add your code to your repository on your laptop
+* commit the changes and push the changes back to github
+
+It is a little tricky because you need to get a authorization token for your computer...
+
+
 We discuss several approaches to pass data between components using a Change Calculator demo
 
 Time permitting, we show how to create and access "Global Variables" in React.
