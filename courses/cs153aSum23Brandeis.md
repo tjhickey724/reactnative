@@ -65,5 +65,14 @@ We discuss several approaches to pass data between components using a Change Cal
 
 Time permitting, we show how to create and access "Global Variables" in React.
 
+### Lesson 5 Mon 6/10/23
+We continue the Change Counter demo and explore ways to access state of parent and/or child components
+We also look closely at the Javascript needed to implement this app
+
+### Lesson 6 Tue 6/11/23
+We have every synchronous student give a short description of their idea for their final app, and a quick demo of what they have now. 
+
+Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project
+
 
 
