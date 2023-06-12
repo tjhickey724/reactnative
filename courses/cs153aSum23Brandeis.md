@@ -63,7 +63,10 @@ It is a little tricky because you need to get a authorization token for your com
 
 We discuss several approaches to pass data between components using a Change Calculator demo
 
-Time permitting, we show how to create and access "Global Variables" in React.
+Next we get practice using FlatLists by writing a simple todo list app which we write together.
+and we talk about the React Triggers which cause a page to be redrawn (shallow changes of state variables)
+
+Time permitting we intoduce the useEffect hook and show how to use it to access an API
 
 ### Lesson 5 Mon 6/10/23
 We continue the Change Counter demo and explore ways to access state of parent and/or child components
