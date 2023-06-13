@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Text, FlatList, View } from 'react-native';
 
-
+const Movie = ({ title, releaseYear }) => (
+    <View style={{backgroundColor:'lightblue'}}>
+        <Text>{title}, {releaseYear}</Text>
+    </View>
+);
 
 const APIdemo = () => {
     const [data,setData] = useState([]);
@@ -26,10 +30,13 @@ const APIdemo = () => {
             <Text>API Demo</Text>
             
             <FlatList
-                data={data.slice(0,2)}
+                data={data.slice(0,20)}
                 keyExtractor={({ id }, index) => id}
                 renderItem={({ item }) => (
-                    <Text>{item.title}, {item.releaseYear}</Text>
+                    <Movie
+                        title={item.title}
+                        releaseYear={item.releaseYear}  
+                    />
                 )}
             />
 
