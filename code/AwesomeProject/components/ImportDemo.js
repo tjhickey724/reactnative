@@ -14,6 +14,7 @@ export default function App() {
     const square = power_fns[0];
     const cuber = power_fns[1];
   */
+  const {sq,fourthpower} = power_obj;
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!!!</Text>

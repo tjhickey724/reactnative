@@ -10,8 +10,12 @@ const CoinCount = (props) => {
 
     const [value,setValue] = useState(0);
     return (
-        <View style={{flex: 1, flexDirection: 'column'}} >
-                <Text> value={value}</Text>
+        <View style={{flex: 1, 
+                      flexDirection: 'row',
+                      margin:10,
+                      borderWidth:2,
+                      borderColor:'blue'}} >
+                
                 <Button
                     title={coinName}
                     onPress = {() => {
@@ -20,6 +24,7 @@ const CoinCount = (props) => {
                                      }
                             }
                 />
+                <Text> value={value}</Text>
         </View>
     )
 }
