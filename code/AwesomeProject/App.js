@@ -1,4 +1,4 @@
 
-import App from './components/Counter';
+import App from './components/WeatherDemo';
 
 export default App

@@ -15,8 +15,10 @@ const APIdemo = () => {
           console.dir(json.properties.forecast)
           const response2 = await fetch(json.properties.forecast)
           const json2 = await response2.json()
-          console.dir(json2.properties.periods[0])
+          const forecast = json2.properties.periods[0].detailedForecast
+          console.dir(forecast)
           setData(json); 
+          setForecast(forecast)
         } catch (error) {
           console.error(error);
         } finally {
@@ -30,7 +32,7 @@ const APIdemo = () => {
         <View>
             <Text>API Demo</Text>
             
-            <Text>{JSON.stringify(data)}</Text>
+            <Text>{JSON.stringify(forecast)}</Text>
 
         </View>
     );
