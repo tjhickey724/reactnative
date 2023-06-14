@@ -84,7 +84,7 @@ We continue our discussion of useEffect but with a more real API giving the weat
 We can find our lattitude and longitude from our address using
 [https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json)
 
-The file [lib/weather.js](../code/AwesomeProject/lib/weather.js) has functions for accessing these APIs
+The file [lib/weatherAPI.js](../code/AwesomeProject/lib/weatherAPI.js) has functions for accessing these APIs
 and we'll use these to create a simplet weather phone app.
 
 Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
