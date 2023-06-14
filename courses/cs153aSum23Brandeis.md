@@ -85,7 +85,9 @@ We can find our lattitude and longitude from our address using
 [https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json)
 
 The file [lib/weatherAPI.js](../code/AwesomeProject/lib/weatherAPI.js) has functions for accessing these APIs
-and we'll use these to create a simplet weather phone app.
+and we'll use these to create a simplet weather phone app. This example uses the 
+[axios package](https://www.npmjs.com/package/axios) instead of the built-in fetch command. Both are
+quite commonly used in web and mobile app development.
 
 Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
 of persisting data when the app is closed and the reopened.
