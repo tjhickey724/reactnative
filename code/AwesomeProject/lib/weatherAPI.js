@@ -11,8 +11,10 @@ const get_latlon = async (address) => {
               "?address="+address+
               "&benchmark=2020"+
               "&format=json"
-    let response = await axios.get(url)
-    return response.data.result.addressMatches
+    console.log('url=',url)
+    let response = await fetch(url)
+    let json = await response.json()
+    return json.result.addressMatches
 }
 
 // returns a forecast for any US location

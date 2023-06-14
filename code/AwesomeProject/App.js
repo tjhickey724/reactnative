@@ -1,4 +1,4 @@
 
-import App from './components/APIdemo';
+import App from './components/Counter';
 
 export default App
