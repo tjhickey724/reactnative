@@ -77,5 +77,20 @@ We have every synchronous student give a short description of their idea for the
 
 Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project
 
+### Lesson 7 Wed 6/12/23
+We continue our discussion of useEffect but with a more real API giving the weather 
+[https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
+
+We can find our lattitude and longitude from our address using
+[https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json)
+
+The file [lib/weather.js](../code/AwesomeProject/lib/weather.js) has functions for accessing these APIs
+and we'll use these to create a simplet weather phone app.
+
+Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
+of persisting data when the app is closed and the reopened.
+
+We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
+
 
 
