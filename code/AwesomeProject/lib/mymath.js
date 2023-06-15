@@ -13,8 +13,8 @@ function circle_area(r) {
 };
 
 // Destructuring examples...
-const power_fns = [sq,  cube,  (r)=> sq(sq(r)), function(z){return z**5}];
-const power_obj = {sq:sq, cube:cube, fourthpower:(r) => sq(sq(r))}
+const power_fns = [sq,  cube2,  (r)=> sq(sq(r)), function(z){return z**5}];
+const power_obj = {sq:sq, cube:cube2, fourthpower:(r) => sq(sq(r))}
 
 
 const {cube,fourthpower} = power_obj;
