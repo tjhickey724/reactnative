@@ -1,4 +1,4 @@
 
-import App from './components/PressableDemo';
+import App from './components/ContextDemos/ChangeCounter';
 
 export default App;
