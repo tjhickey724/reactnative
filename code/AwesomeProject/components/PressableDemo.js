@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Pressable, StyleSheet, Text, View} from 'react-native';
+import {Pressable, StyleSheet, Button, Text, View} from 'react-native';
 
 const App = () => {
   const [timesPressed, setTimesPressed] = useState(0);
@@ -13,6 +13,12 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <Button
+        title="Press Me"
+        onPress={() => {
+          setTimesPressed(current => current + 1);
+        }}
+      />
       <Pressable
         onPress={() => {
           setTimesPressed(current => current + 1);

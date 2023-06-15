@@ -29,9 +29,11 @@ const HomeScreen = ({navigation}) => {
     return <Text>This is {route.params.name}'s profile</Text>;
   };
 
+  // use value={{apikey:'7d8s97f89dsfsd',username:'tjhickey'}}
 const MyStack = () => {
   return (
    <UsernameContext.Provider value="tjhickey">
+      
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen

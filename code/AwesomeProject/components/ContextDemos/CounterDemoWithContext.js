@@ -6,7 +6,7 @@ import {useValue} from './ValueContext'
 export default function CounterDemo() {
   
 
-    const {currentValue,setCurrentValue} = useValue();
+    const {currentValue} = useValue();
   
     return (
       <View>
