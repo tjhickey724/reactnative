@@ -68,6 +68,8 @@ and we talk about the React Triggers which cause a page to be redrawn (shallow c
 
 Time permitting we intoduce the useEffect hook and show how to use it to access an API
 
+## Week 2
+
 ### Lesson 5 Mon 6/10/23
 We continue the Change Counter demo and explore ways to access state of parent and/or child components
 We also look closely at the Javascript needed to implement this app
@@ -81,9 +83,6 @@ Everyone will comment on each project, give suggestions for how it could be impr
 We continue our discussion of useEffect but with a more real API giving the weather 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
 
-We can find our lattitude and longitude from our address using
-[https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=415%20South%20St%20Waltham%20MA&benchmark=2020&format=json)
-
 The file [lib/weatherAPI.js](../code/AwesomeProject/lib/weatherAPI.js) has functions for accessing these APIs
 and we'll use these to create a simplet weather phone app. This example uses the 
 [axios package](https://www.npmjs.com/package/axios) instead of the built-in fetch command. Both are
@@ -95,9 +94,15 @@ of persisting data when the app is closed and the reopened.
 We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
 
 ### Lesson 8 Thu 6/13/23
-We started going through the expo.dev tutorial on creating a simple phone app using the camera and handling gestures
+We started going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
+on creating a simple phone app using the camera and handling gestures
 
+## Week 3
 
+### Lesson 9 Tue 6/20/23
+We continue working through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/)
+and we work on making our own modifications and tweaks of the code as well as making sure we fully 
+understand the javascript and the react native code.
 
 
 
