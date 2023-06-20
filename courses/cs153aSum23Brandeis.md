@@ -94,5 +94,10 @@ of persisting data when the app is closed and the reopened.
 
 We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
 
+### Lesson 8 Thu 6/13/23
+We started going through the expo.dev tutorial on creating a simple phone app using the camera and handling gestures
+
+
+
 
 
