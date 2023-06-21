@@ -107,5 +107,6 @@ understand the javascript and the react native code.
 ### Lesson 10 Wed 6/21/23
 We have all students demo the current versions of their Final Project Apps
 and give feedback to each other. We also look over the asynchronous students apps from last week
-and we start looking at the Gesture Handlers.  
+and we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
+
 
