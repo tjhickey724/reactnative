@@ -1,4 +1,4 @@
 
-import App from './components/PressableDemo';
+import App from './components/ChatGPTDemo';
 
 export default App;
