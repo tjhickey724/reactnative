@@ -1,4 +1,4 @@
 
-import App from './components/ChatGPTDemo';
+import App from './components/Wordle';
 
 export default App;

@@ -4,8 +4,9 @@ This is a demo of the OpenAI API in React Native
 
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text, TextInput, Button, FlatList, View } from 'react-native';
-import axios from 'axios';
-import open_api_key from './open_api_key';
+import axios from 'axios';  // make sure you npm install axios    
+import open_api_key from './open_api_key';  // this is in .gitignore don't push to github
+
 
 /*
 open_api_key.js has the form
@@ -40,7 +41,7 @@ const APIdemo = () => {
                 await axios.post(url,msg_data,config)
 
 
-          const result = await response.data;
+          const result = await response.data;  // don't need await??
           setLoading(false);
           setData(result);
         } catch (error) {
@@ -60,7 +61,7 @@ const APIdemo = () => {
         </View>
     );
 
-    const debugging = false;
+    const debugging = true;
     return(
         <SafeAreaView style={{flex:1, fontSize:24,margin:30}}>
             <Text>API Demo</Text>
