@@ -21,6 +21,15 @@ const analyze_guess = (word,guess) => {
         }
     }
     return(clue);
-}
+};
 
-export {pick_random_word,analyze_guess};
+const word2list = (word) => {
+    let word_list = [];
+    for (let i=0; i<word.length; i++) {
+        word_list.push(word[i]);
+    }
+    return(word_list);
+};
+
+
+export {pick_random_word,analyze_guess,word2list};
