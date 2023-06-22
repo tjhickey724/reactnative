@@ -6,12 +6,14 @@
 */
 
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import words5 from '../assets/words5a';
-import {pick_random_word} from '../lib/words';
+import {pick_random_word,analyze_guess} from '../lib/words';
 
 const App = () => {
   const [word, setWord] = useState(words5[1000]);
+  const [guess, setGuess] = useState("");
+
   console.log('words5 has length',words5.length);
 
   return (
@@ -19,6 +21,13 @@ const App = () => {
       <Text style={styles.header}>Random Word App</Text>
       <Text style={styles.word}>{word}</Text>
       <Button title="Reset" onPress = {() => setWord(pick_random_word(words5))}/>
+      <Text> Make a guess </Text>
+        <TextInput  
+            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+            onChangeText={text => setGuess(text)}
+            value={guess}
+        />
+        <Text> {guess} clue ='{analyze_guess(word,guess)}' </Text>
     </View>
   );
 };

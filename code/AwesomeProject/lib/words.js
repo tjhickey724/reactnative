@@ -14,13 +14,13 @@ const analyze_guess = (word,guess) => {
     for (let i=0; i<word.length; i++) {
         if (guess[i]==word[i]) {
             clue = clue + '+';
-        else if (word.includes(guess[i])){
+        } else if (word.includes(guess[i])){
             clue = clue + '-';
         } else {
-            clue += ".";
+            clue = clue + ".";
         }
-    
-        return(clue);
     }
+    return(clue);
+}
 
 export {pick_random_word,analyze_guess};
