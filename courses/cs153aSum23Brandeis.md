@@ -109,4 +109,9 @@ We have all students demo the current versions of their Final Project Apps
 and give feedback to each other. We also look over the asynchronous students apps from last week
 and we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
 
+### Lesson 11 Thu 6/22/23
+We work on interacting with chatGPT.
+
+Also we practice writing javascript for word games like wordle...
+
 
