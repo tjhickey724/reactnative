@@ -32,4 +32,6 @@ const word2list = (word) => {
 };
 
 
+
+
 export {pick_random_word,analyze_guess,word2list};
