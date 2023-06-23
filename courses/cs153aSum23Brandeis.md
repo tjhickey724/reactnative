@@ -114,4 +114,27 @@ We work on interacting with chatGPT.
 
 Also we practice writing javascript for word games like wordle...
 
+## Week 4
+
+### Lesson 12 Mon 6/26/23
+We work together at completing the Wordle app and getting it to work nicely on the phone
+with a clear and easy to use UI.
+
+### Lesson 13 Tue 6/27/23
+We have our demo day when all students give demos of their apps and review other students' apps.
+We also review the asynchronous students apps....
+
+### Lesson 14 Wed 6/28/23
+
+### Lesson 15 Thu 6/29/23
+
+## Week 5
+
+### Lesson 16 Wed 7/5/23
+
+### Lesson 17 Thu 7/6/23
+We have our final project showcase today.
+All students give demos of their apps and answer questions.
+We also review all of the asynchronous students apps.
+
 
