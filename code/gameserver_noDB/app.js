@@ -1,11 +1,15 @@
+/*
+gameserver
+This is a minimal app to allow phone apps to communicate with each other.
+The goal of this app was to build the simplest possible app that would meet that goal.
+*/
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -19,8 +23,28 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.get("/", (req,res,next) => {
+  res.json("Game Server "+Date());
+})
+
+let rooms ={'152a':{a:5,b:6},'test':{a:1,b:2}};
+
+app.get("/room", (req,res,next) => {
+  const id = req.query.id;
+  res.json(rooms[id]);
+})
+
+app.post("/room", (req,res,next) => {
+  const id = req.body.id;
+  const uid = req.body.uid;
+  const data = req.body.data;
+  if (id in rooms) {
+    rooms[id][uid] = data;
+  } else {
+    rooms[id] = {};
+    rooms[id][uid] = data;
+  }
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -10,7 +10,7 @@ export default function Button({ title,  onPress }) {
       >
         <Pressable
           style={[styles.button, { backgroundColor: "#fff" }]}
-          onPress={onPress}
+          onPress={onPress} 
         >
           <Text >{title}</Text>
         </Pressable>
