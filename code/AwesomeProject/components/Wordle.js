@@ -31,9 +31,7 @@ const validateGuess = (guess) =>{
     <SafeAreaView style={styles.container}>
         <Text style={styles.header}>Random Word App</Text>
 
-       {/*  TH - adding code to only show clue when debugging ...   */}
-        {debugging? <Text style={styles.word}>{word}</Text>:""}
-       <Button title="debug" onPress = {() => setDebugging(!debugging)} />
+
       {gameOver?
         <WordleButton title="Reset" 
              onPress = {() => {
@@ -53,6 +51,7 @@ const validateGuess = (guess) =>{
                         textAlign:'center', 
                         fontFamily:'Courier New',
                         borderColor: 'gray', borderWidth: 1}}
+                autoCapitalize='none'
                 onChangeText={text => setGuess(text)}
                 value={guess}
             />
@@ -87,6 +86,11 @@ const validateGuess = (guess) =>{
     </>
 }
         <GuessList word={word} guesses={guesses} />
+
+       {/*  TH - adding code to only show clue when debugging ...   */}
+       {debugging? <Text style={styles.word}>word is {word}</Text>:""}
+       <Button title={debugging?"hide answer":"show answer"} onPress = {() => setDebugging(!debugging)} />
+  
     </SafeAreaView>
   );
 };
