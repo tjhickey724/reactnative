@@ -12,12 +12,12 @@ const Guess = ({word,guess}) => {
     
   return (
   <View style={{flex:1,flexDirection:'row',
-                backgroundColor:'lightblue',margin:0,padding:2,}}>
+                margin:0,padding:2,}}>
       {word2list(guess).map((letter,index) => (
           <Text key={index} 
                   style={{backgroundColor:color[clue[index]],
                           fontSize:30,
-                          fontFamily:'monospace',
+                          fontFamily:'Courier New',
                           borderWidth:1,
                           borderColor:'black',
                           padding:5,

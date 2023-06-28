@@ -10,6 +10,8 @@ const pick_random_word = (words5) => {
 };
 
 const analyze_guess = (word,guess) => {
+    word = word.toLowerCase();
+    guess = guess.toLowerCase();
     let clue = "";
     for (let i=0; i<word.length; i++) {
         if (guess[i]==word[i]) {

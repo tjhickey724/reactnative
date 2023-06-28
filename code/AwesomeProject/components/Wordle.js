@@ -9,10 +9,11 @@ import { SafeAreaView, View, Text, TextInput, StyleSheet, Button } from 'react-n
 import words5 from '../assets/words5a';
 import {pick_random_word,analyze_guess} from '../lib/words';
 import GuessList from '../components/GuessList';
+import WordleButton from '../components/WordleButton';
 
 
 const App = () => {
-  const [word, setWord] = useState(words5[1000]);
+  const [word, setWord] = useState(pick_random_word(words5));
   const [guessNum, setGuessNum] = useState(0)
   const [guess, setGuess] = useState("");
   const [gameOver, setGameOver] = useState(false);
@@ -34,7 +35,7 @@ const validateGuess = (guess) =>{
         {debugging? <Text style={styles.word}>{word}</Text>:""}
        <Button title="debug" onPress = {() => setDebugging(!debugging)} />
       {gameOver?
-        <Button title="Reset" 
+        <WordleButton title="Reset" 
              onPress = {() => {
                   setWord(pick_random_word(words5));
                   setGuesses([]);
@@ -50,25 +51,31 @@ const validateGuess = (guess) =>{
             <TextInput  
                 style={{width:150, fontSize:30,
                         textAlign:'center', 
+                        fontFamily:'Courier New',
                         borderColor: 'gray', borderWidth: 1}}
                 onChangeText={text => setGuess(text)}
                 value={guess}
             />
         </View>
 
-        <Button 
+        <WordleButton 
             title="Check Guess" 
             onPress = {() => {
                   {/* jake - you win alert */}
-                  if (guess == word) {
+                  if (guess.toLowerCase() == word) {
                       setGuesses(guesses.concat(guess));
+                      
+                      alert('You guessed the word ' + word + ' in ' + (guessNum+1)+ ((guessNum==0)?' guess':' guesses'));
                       setGuessNum(guessNum+1);
-                      alert('You guessed the word ' + word + ' in ' + guessNum);
                       setGameOver(true);
-                  {/*How do we make it so that they can't submit another guess?*/}
-                  }else if (guessNum == 6 && guess != word) {
-                    alert('You have already submitted the maximum number of guesses.');
+                  
+                  } else if (!words5.includes(guess.toLowerCase()) ){ /* check that the guess is in the array wards5*/
+                      alert('Your guess is not a valid word. Please try again.');
+                  }else if (guessNum == 5 && guess != word) {
+                    alert('You have already submitted the maximum number of guesses. The word was '+word);
                     setGameOver(true);
+                    setGuesses(guesses.concat(guess));
+                    
                   } else {
                     setGuesses(guesses.concat(guess));
                     setGuessNum(guessNum+1);
