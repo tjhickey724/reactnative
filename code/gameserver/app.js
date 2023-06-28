@@ -29,6 +29,8 @@ const Room =
 
 var app = express();
 
+app.disable('etag');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -47,6 +49,7 @@ app.get("/", (req,res,next) => {
 app.get('/debug',
   async (req,res,next) => {
     const rooms = await Room.find({});
+    console.log('in debug');
     res.json(rooms);
   }
 );
@@ -77,19 +80,21 @@ app.post("/room",
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  res.json("404: "+req.url);
+  //res.json("404: "+req.url);
   next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  // console.log(`Error: ${err}`);
+  // res.locals.message = err.message;
+  // res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+  // // render the error page
+  // res.status(err.status || 500);
+  // res.render('error');
+  res.json("Error: "+err);
 });
 
 module.exports = app;
