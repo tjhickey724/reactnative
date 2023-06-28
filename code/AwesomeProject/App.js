@@ -1,4 +1,4 @@
 
-import App from './components/Wordle';
+import App from './components/WordleWithFriends';
 
 export default App;
