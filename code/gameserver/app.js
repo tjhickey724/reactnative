@@ -9,7 +9,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-import cors from 'cors';
+const cors = require('cors');
 
 /* 
     Connect to the database and create a Schema for the room data
