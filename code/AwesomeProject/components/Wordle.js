@@ -5,46 +5,46 @@
 */
 
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Button, FlatList } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, StyleSheet, Button } from 'react-native';
 import words5 from '../assets/words5a';
-import {pick_random_word,analyze_guess,word2list} from '../lib/words';
+import {pick_random_word,analyze_guess} from '../lib/words';
+import GuessList from '../components/GuessList';
+
 
 const App = () => {
   const [word, setWord] = useState(words5[1000]);
+  const [guessNum, setGuessNum] = useState(0)
   const [guess, setGuess] = useState("");
+  const [gameOver, setGameOver] = useState(false);
   const [guesses, setGuesses] = useState([]);
-
+  const [debugging,setDebugging] = useState(false);  /* debugging mode */
   console.log('words5 has length',words5.length);
 
-  const Guess = ({guess}) => {
-      const clue = analyze_guess(word,guess);
-      console.log('clue is',clue);
-      console.log(JSON.stringify(word2list(guess)));
-      console.log('guesses is',JSON.stringify(guesses));
-      const color = {'+':'lightgreen','-':'yellow','.':'white'};
-    return (
-    <View style={{flex:1,flexDirection:'row',
-                  backgroundColor:'lightblue',margin:0,padding:2,}}>
-        {word2list(guess).map((letter,index) => (
-            <Text key={index} 
-                    style={{backgroundColor:color[clue[index]],
-                            fontSize:30,
-                            fontFamily:'monospace',
-                            borderWidth:1,
-                            borderColor:'black',
-                            padding:5,
-                            margin:0,}}>
-                            {letter}
-            </Text>
-        ))}
-    </View>
-  )};
+const validateGuess = (guess) =>{
+       return guess.length ==5;
+};
+
+  
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
         <Text style={styles.header}>Random Word App</Text>
-        <Text style={styles.word}>{word}</Text>
-        <Button title="Reset" onPress = {() => setWord(pick_random_word(words5))}/>
+
+       {/*  TH - adding code to only show clue when debugging ...   */}
+        {debugging? <Text style={styles.word}>{word}</Text>:""}
+       <Button title="debug" onPress = {() => setDebugging(!debugging)} />
+      {gameOver?
+        <Button title="Reset" 
+             onPress = {() => {
+                  setWord(pick_random_word(words5));
+                  setGuesses([]);
+	                setGuessNum(0);
+	                {/* JF - clear guess box */}
+	                setGuess('');
+                  setGameOver(false);
+                }}/>
+         : 
+      <>
         <Text> Make a guess </Text>
         <View>
             <TextInput  
@@ -55,19 +55,32 @@ const App = () => {
                 value={guess}
             />
         </View>
+
         <Button 
             title="Check Guess" 
-            onPress = {() => setGuesses(guesses.concat(guess))}/>
+            onPress = {() => {
+                  {/* jake - you win alert */}
+                  if (guess == word) {
+                      setGuesses(guesses.concat(guess));
+                      setGuessNum(guessNum+1);
+                      alert('You guessed the word ' + word + ' in ' + guessNum);
+                      setGameOver(true);
+                  {/*How do we make it so that they can't submit another guess?*/}
+                  }else if (guessNum == 6 && guess != word) {
+                    alert('You have already submitted the maximum number of guesses.');
+                    setGameOver(true);
+                  } else {
+                    setGuesses(guesses.concat(guess));
+                    setGuessNum(guessNum+1);
+                  }
+                  setGuess(''); {/* jake - clear the guess box after each guess */}
+                  }}/>
 
         <Text> {guess} clue ='{analyze_guess(word,guess)}' </Text>
-        <FlatList
-                data={guesses}
-                keyExtractor={({ id },index) => index}
-                renderItem={({item}) => (
-                    <Guess guess={item} />                          
-                )}
-            />
-    </View>
+    </>
+}
+        <GuessList word={word} guesses={guesses} />
+    </SafeAreaView>
   );
 };
 
@@ -88,4 +101,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default App;  
+
