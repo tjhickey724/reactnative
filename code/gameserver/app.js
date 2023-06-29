@@ -61,6 +61,17 @@ app.get("/room",
     res.json(rooms);
 })
 
+app.get("/add_to_room", 
+  async (req,res,next) => {
+    const room_id = req.query.room_id;
+    const user_id = req.query.user_id;
+    const data = req.query.data;
+    let room = new Room({room_id,user_id,data});
+    await room.save();
+    res.json(room);
+
+})
+
 app.get("/clear_room",
   async (req,res,next) => {
     const room_id = req.query.room_id;
