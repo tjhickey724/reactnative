@@ -61,22 +61,25 @@ app.get("/room",
     res.json(rooms);
 })
 
+app.get("/clear_room",
+  async (req,res,next) => {
+    const room_id = req.query.room_id;
+    const rooms = await Room.deleteMany({room_id});
+    res.json(rooms);
+  }
+);
+
 app.post("/room", 
   async (req,res,next) => { 
     const room_id = req.body.room_id;
     const user_id = req.body.user_id; 
     const data = req.body.data; 
-    let room = await Room.findOne({room_id,user_id});
-    if (room) {
-      room.data = data;
-      //console.dir(room);
+    let room = new Room({room_id,user_id,data});
       await room.save();
-    } else {
-      room = new Room({room_id,user_id,data});
-      await room.save();
-    }
     res.json(room);
 });
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -24,6 +24,7 @@ const App = () => {
     const [group,setGroup] = useState('cs153aSum23'); 
     const [scores,setScores] = useState([]);
     const [username,setUsername] = useState('anon'); /* username for high score */
+    const [gamesPlayed,setGamesPlayed] = useState(0); /* number of games played */
 
     const validateGuess = (guess) =>{
         return guess.length ==5;
@@ -39,7 +40,7 @@ const App = () => {
     }
 
     const saveScore = async (word) => {
-        setScores(scores.concat(word));
+        setGamesPlayed(gamesPlayed+1);
         let score = 
             await axios(
                 {method: 'post',
@@ -52,7 +53,7 @@ const App = () => {
 
     };
 
-    useEffect(() => getScores,[]);
+    useEffect(() => getScores,[gamesPlayed]);
 
   
 
@@ -113,6 +114,7 @@ const App = () => {
                   }}/>
 
         <Text> {guess} clue ='{analyze_guess(word,guess)}' </Text>
+        <Text> {gamesPlayed} games played</Text>
     </>
 }
         <GuessList word={word} guesses={guesses} />
