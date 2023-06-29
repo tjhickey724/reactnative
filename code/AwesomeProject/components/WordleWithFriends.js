@@ -35,21 +35,29 @@ const App = () => {
     const server = server1;
 
     const getScores = async () => {
-        let scores = await axios(server+'/room?room_id='+group)
-        setScores(scores);
+        try {
+            let scores = await axios(server+'/room?room_id='+group)
+            setScores(scores); 
+        }
+        catch(error){
+            alert(error);
+        }
     }
 
     const saveScore = async (word) => {
-        setGamesPlayed(gamesPlayed+1);
-        let score = 
-            await axios(
-                {method: 'post',
-                 url: server+'/room',
-                 data: {room_id:group, user_id:username, data:scores.concat(word)},
-                 });
+        try {
+            setGamesPlayed(gamesPlayed+1);
+            let score = 
+                await axios(
+                    {method: 'post',
+                    url: server+'/room',
+                    data: {room_id:group, user_id:username, data:word},
+                    }); 
+        }
+        catch(error){
+            alert(error);
+        }
         
-        console.log(word);
-        console.log(scores);
 
     };
 
