@@ -29,16 +29,23 @@ const App = () => {
         return guess.length ==5;
     };
 
+    const server1 = 'http://gracehopper.cs-i.brandeis.edu:3000';
+    const server2 = 'http://localhost:3000';
+    const server = server1;
+
     const getScores = async () => {
-        let scores = await axios('http://gracehopper.cs-i.brandeis.edu:3000/room?room_id='+group)
+        let scores = await axios(server+'/room?room_id='+group)
         setScores(scores);
     }
 
     const saveScore = async (word) => {
-        setScores(scores+[word]);
+        setScores(scores.concat(word));
         let score = 
-            await axios('http://gracehopper.cs-i.brandeis.edu:3000/room',
-                        {room_id:group, user_id:username, data:scores+[word]});
+            await axios(
+                {method: 'post',
+                 url: server+'/room',
+                 data: {room_id:group, user_id:username, data:scores.concat(word)},
+                 });
         
         console.log(word);
         console.log(scores);
