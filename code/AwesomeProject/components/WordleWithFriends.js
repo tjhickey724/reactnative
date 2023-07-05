@@ -5,7 +5,7 @@
 */
 
 import React, { useState, useEffect } from 'react';
-import { SafeAreaView, View, Text, TextInput, StyleSheet, Button } from 'react-native';
+import { SafeAreaView, View, FlatList, Text, TextInput, StyleSheet, Button } from 'react-native';
 import words5 from '../assets/words5a';
 import {pick_random_word,analyze_guess} from '../lib/words';
 import GuessList from '../components/GuessList';
@@ -25,14 +25,15 @@ const App = () => {
     const [scores,setScores] = useState([]);
     const [username,setUsername] = useState('anon'); /* username for high score */
     const [gamesPlayed,setGamesPlayed] = useState(0); /* number of games played */
-
+    
     const validateGuess = (guess) =>{
         return guess.length ==5;
     };
 
     const server1 = 'http://gracehopper.cs-i.brandeis.edu:3000';
     const server2 = 'http://localhost:3000';
-    const server = server1;
+    const server3 = 'https://ff14-209-6-142-225.ngrok-free.app';
+    const server = server3;
 
     const getScores = async () => {
         try {
@@ -68,24 +69,56 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
         <Text style={styles.header}>Random Word App</Text>
+        <View style={{flex:1,flexDirection:'row'}}>
+            <TextInput 
+                style={{width:150, fontSize:10,
+                        textAlign:'center',
+                        fontFamily:'Courier New',
+                        borderColor: 'gray', borderWidth: 1}}
+                autoCapitalize='none'
+                onChangeText={text => setUsername(text)}
+                value={username}
+            />
+              <TextInput  
+                    style={{width:150, fontSize:10,
+                            textAlign:'center', 
+                            fontFamily:'Courier New',
+                            borderColor: 'gray', borderWidth: 1}}
+                    autoCapitalize='none'
+                    onChangeText={text => setGroup(text)}
+                    value={group}
+                />
+            </View>
 
 
       {gameOver?
-        <WordleButton title="Reset" 
-             onPress = {() => {
-                  setWord(pick_random_word(words5));
-                  setGuesses([]);
-	                setGuessNum(0);
-	                {/* JF - clear guess box */}
-	                setGuess('');
-                  setGameOver(false);
-                }}/>
+        <>
+              <WordleButton title="Reset" 
+                  onPress = {() => {
+                        setWord(pick_random_word(words5));
+                        setGuesses([]);
+                        setGuessNum(0);
+                        {/* JF - clear guess box */}
+                        setGuess('');
+                        setGameOver(false);
+                      }}/>
+              <FlatList
+                      data={scores['data']}
+                      keyExtractor={({ id },index) => index}
+                      renderItem={({item}) => (
+                          <View style={{flex:1,flexDirection:'row'}}> 
+                              <Text>{item.user_id}: </Text>
+                              <Text>{item.data}</Text> 
+                          </View>
+                      )}
+                  />
+          </>
          : 
       <>
         <Text> Make a guess </Text>
-        <View>
+        <View style={{flex:1,flexDirection:'row'}}>
             <TextInput  
-                style={{width:150, fontSize:30,
+                style={{width:150, fontSize:10,
                         textAlign:'center', 
                         fontFamily:'Courier New',
                         borderColor: 'gray', borderWidth: 1}}
@@ -93,6 +126,7 @@ const App = () => {
                 onChangeText={text => setGuess(text)}
                 value={guess}
             />
+            
         </View>
 
         <WordleButton 
@@ -121,22 +155,21 @@ const App = () => {
                   setGuess(''); {/* jake - clear the guess box after each guess */}
                   }}/>
 
-        <Text> {guess} clue ='{analyze_guess(word,guess)}' </Text>
+        
         <Text> {gamesPlayed} games played</Text>
+        
     </>
-}
+   
+    }
+
+        
         <GuessList word={word} guesses={guesses} />
         <Text>Guesses remaining: {6-guessNum}</Text>
-        <Text> scores = {JSON.stringify(scores,null,5)}</Text>
-        <TextInput 
-            style={{width:150, fontSize:30,
-                    textAlign:'center',
-                    fontFamily:'Courier New',
-                    borderColor: 'gray', borderWidth: 1}}
-            autoCapitalize='none'
-            onChangeText={text => setUsername(text)}
-            value={username}
-        />
+       
+        {/*<Text> scores = {JSON.stringify(scores['data'],null,5)}</Text> */}
+        <View style={{flex:20}}>
+            <Text>  </Text> 
+        </View>
 
        {/*  TH - adding code to only show clue when debugging ...   */}
        {debugging? <Text style={styles.word}>word is {word}</Text>:""}
