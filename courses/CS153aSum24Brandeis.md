@@ -90,11 +90,6 @@ of persisting data when the app is closed and the reopened.
 
 We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
 
-### Lesson 7 Wed 6/12/23
-
-
-### Lesson 8 Thu 6/13/23
-
 
 ## Week 3
 
