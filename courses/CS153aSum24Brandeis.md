@@ -67,7 +67,7 @@ and we talk about the React Triggers which cause a page to be redrawn (shallow c
 
 Time permitting we intoduce the useEffect hook and show how to use it to access an API
 
-## Week 2
+## Week 2: State and APIs
 
 ### Lesson 5 Mon 6/10/23
 We continue the Change Counter demo and explore ways to access state of parent and/or child components
@@ -91,7 +91,7 @@ of persisting data when the app is closed and the reopened.
 We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
 
 
-## Week 3
+## Week 3 Accessing Phone features
 
 ### Lesson 7 Mon 6/17/23
 We started going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
@@ -110,7 +110,7 @@ We work on interacting with chatGPT.
 
 Also we practice writing javascript for word games like wordle...
 
-## Week 4
+## Week 4 Improving the User Interface
 
 ### Lesson 10 Mon 6/24/23
 We work together at completing the Wordle app and getting it to work nicely on the phone
@@ -124,7 +124,7 @@ We also review the asynchronous students apps....
 
 ### Lesson 13 Thu 6/27/23
 
-## Week 5
+## Week 5 Deployment
 
 ### Lesson 14 Mon 7/1/23
 
