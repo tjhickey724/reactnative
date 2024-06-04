@@ -41,17 +41,17 @@ and to explain how they work, line by line.
 We showed how to setup the local environment to develop React Native apps using Visual Studio Code.
 Then we looked over some of the Javascript documentation.
 Steps:
-## install npm
+#### install npm
 Visit npmjs.org and follow the instructions
 
-## load libraries to create an app
+#### load libraries to create an app
 ``` bash
 % npm i -g create-react-native-app
 % create-react-native-app my_first_rn_app --use-npm
 % cd my_first_rn_app
 % npm start
 ```
- ## Edit App.js in vscode
+#### Edit App.js in vscode
  We can try all of our Snack examples here...
 
 
