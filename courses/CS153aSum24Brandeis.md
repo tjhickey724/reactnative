@@ -54,6 +54,9 @@ Visit npmjs.org and follow the instructions
 #### Edit App.js in vscode
  We can try all of our Snack examples here...
 
+#### Move components to their own files
+We can create a components folder for special components
+
 
 ### Lesson 4 Thu 6/6/23
 We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
