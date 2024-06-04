@@ -39,7 +39,21 @@ and to explain how they work, line by line.
 
 ### Lesson 3 Wed 6/5/23
 We showed how to setup the local environment to develop React Native apps using Visual Studio Code.
-Then we looked over some of the Javascript documentation
+Then we looked over some of the Javascript documentation.
+Steps:
+## install npm
+Visit npmjs.org and follow the instructions
+
+## load libraries to create an app
+``` bash
+% npm i -g create-react-native-app
+% create-react-native-app my_first_rn_app --use-npm
+% cd my_first_rn_app
+% npm start
+```
+ ## Edit App.js in vscode
+ We can try all of our Snack examples here...
+
 
 ### Lesson 4 Thu 6/6/23
 We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
