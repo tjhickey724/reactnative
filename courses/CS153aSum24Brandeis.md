@@ -87,6 +87,24 @@ const styles = StyleSheet.create({
 });
 
 ```
+if the Counter is in components/Counter.js
+then we rewrite App.js to be
+``` javascript
+ import React from 'react';
+//import {Counter} from './components/Counter';// import non-default export
+import Counter from './components/Counter'; // importing default export
+import {Text} from 'react-native';
+
+export default function App() {
+
+  return (
+    <Counter>
+      <Text>Tim's Really New Counter</Text>
+    </Counter>
+  );
+}
+
+```
 
 #### Move components to their own files
 We can create a components folder for special components
