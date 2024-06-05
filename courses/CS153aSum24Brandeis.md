@@ -58,7 +58,7 @@ by going to [https://snack.expo.dev/](https://snack.expo.dev/)
 #### Edit App.js in vscode
  We can try all of our Snack examples here...
  ``` javascript
-import { StatusBar } from 'expo-status-bar';
+
 import React,{useState} from 'react';
 import { SafeAreaView,StyleSheet, Text, View } from 'react-native';
 
@@ -72,7 +72,7 @@ export default function App() {
       <button title="add 1" onClick={() => setCount(count + 1)}>Increment</button>
       <button title="sub 1" onClick={() => setCount(count - 1)}>Decrement</button>
 
-      <StatusBar style="auto" />
+
     </SafeAreaView>
   );
 }
