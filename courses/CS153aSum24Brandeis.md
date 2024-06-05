@@ -59,8 +59,9 @@ by going to [https://snack.expo.dev/](https://snack.expo.dev/)
  We can try all of our Snack examples here...
  ``` javascript
 
+
 import React,{useState} from 'react';
-import { SafeAreaView,StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView,StyleSheet, Text, Button, View } from 'react-native';
 
 const Counter = ({children}) => {
   const [count, setCount] = useState(0);
@@ -69,8 +70,12 @@ const Counter = ({children}) => {
     <SafeAreaView style={styles.container}>
       <Text>This is Tim Hickey's Newer App</Text>
       <Text>Count: {count}</Text>
-      <button title="add 1" onClick={() => setCount(count + 1)}>Increment</button>
-      <button title="sub 1" onClick={() => setCount(count - 1)}>Decrement</button>
+      <Button title="add 1" 
+           onClick={() => setCount(count + 1)}>
+            Increment</Button>
+      <Button title="sub 1" 
+           onClick={() => setCount(count - 1)}>
+            Decrement</Button>
       {children}
 
     </SafeAreaView>
@@ -88,7 +93,6 @@ const styles = StyleSheet.create({
 
 //export {Counter};
 export default Counter
-
 
 ```
 if the Counter is in components/Counter.js
