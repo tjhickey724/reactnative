@@ -51,6 +51,10 @@ Visit npmjs.org and follow the instructions
 % cd my_first_rn_app
 % npm start
 ```
+
+If this doesn't work then you can create a react native app on the web
+by going to [https://snack.expo.dev/](https://snack.expo.dev/)
+
 #### Edit App.js in vscode
  We can try all of our Snack examples here...
 
