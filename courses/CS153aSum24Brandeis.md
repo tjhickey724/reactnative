@@ -62,16 +62,16 @@ by going to [https://snack.expo.dev/](https://snack.expo.dev/)
 import React,{useState} from 'react';
 import { SafeAreaView,StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+const Counter = ({children}) => {
   const [count, setCount] = useState(0);
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>This is Tim Hickey's App</Text>
+      <Text>This is Tim Hickey's Newer App</Text>
       <Text>Count: {count}</Text>
       <button title="add 1" onClick={() => setCount(count + 1)}>Increment</button>
       <button title="sub 1" onClick={() => setCount(count - 1)}>Decrement</button>
-
+      {children}
 
     </SafeAreaView>
   );
@@ -85,6 +85,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+//export {Counter};
+export default Counter
+
 
 ```
 if the Counter is in components/Counter.js
