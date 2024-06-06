@@ -186,6 +186,7 @@ export default App;
 
 ### Lesson 4 Thu 6/6/23
 We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
+We work through the examples for Stack, Tab, and Drawer navigation.
 
 We discuss the relationaship between three front end frameworks
 * [React](https://react.dev)
