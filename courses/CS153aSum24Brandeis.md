@@ -214,7 +214,7 @@ Time permitting we intoduce the useEffect hook and show how to use it to access 
 ## Week 2: State and APIs
 
 ### Lesson 5 Mon 6/10/23
-We continue the Change Counter demo and explore ways to access state of parent and/or child components
+We continue the ToDoList demo and explore ways to access state of parent and/or child components
 We also look closely at the Javascript needed to implement this app.
 We have every synchronous student give a short description of their idea for their final app, and a quick demo of what they have now. 
 
