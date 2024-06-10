@@ -45,6 +45,7 @@ Note that in this case, we are sharing a JSON object with three fields: total, c
 
 To access this data use the useValue function from ValueContext, for any component that needs the value
 ``` javascript
+// CounterDemoWithContext.js
 import React,{useState} from 'react';
 import {View,Text} from 'react-native';
 import NamedCounterWithContext from './NamedCounterWithContext';
