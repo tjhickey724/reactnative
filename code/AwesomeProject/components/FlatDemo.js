@@ -14,7 +14,7 @@ const App = () => {
                     <Text style={{fontSize:60,textAlign:'center',margin:10,padding:20}}>{item}</Text>
                     <Image 
                          style={{width:100,height:100}} 
-                         source={{uri:item['strMealThumb'}}
+                         source={{uri:item['strMealThumb']}}
                     />
                  </View>                         
             )}
