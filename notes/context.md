@@ -83,7 +83,7 @@ import { Text, View, StyleSheet, Button } from 'react-native';
 import {useValue} from './ValueContext';
 
 
-const NamedCounterWithContext = ({ label, value, updateTotal }) => {
+const NamedCounterWithContext = ({ label, value}) => {
     const {currentValue,setCurrentValue} = useValue();
 
   const [count, setCount] = useState(0);
