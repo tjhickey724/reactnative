@@ -1,7 +1,7 @@
 # Context
 
 To share data between components we can use the useContext hook.
-First include the following file, ValueContext.ja in your components:
+First include the following file, ValueContext.js in your components:
 
 ``` javascript
 import React, { useState, useContext, createContext } from "react";
