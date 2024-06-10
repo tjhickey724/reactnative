@@ -1,3 +1,3 @@
-import App from './components/ContextDemos/ChangeCounter';
+import App from './components/TabDemo';
 export default App;
 

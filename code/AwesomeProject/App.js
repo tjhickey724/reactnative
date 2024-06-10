@@ -1,3 +1,3 @@
 
-import App from './components/quiz3/Herron';
+import App from './components/WeatherDemo';
 export default App;
