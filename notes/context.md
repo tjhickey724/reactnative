@@ -77,6 +77,7 @@ export default function CounterDemo() {
 
 To modify the context we use the setCurrentValue function
 ``` javascript
+# NamedCounterWithContext.js
 import React, { useState } from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import {useValue} from './ValueContext';
