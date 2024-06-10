@@ -1,9 +1,14 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
 
-const Item = ({ item }) => (
+const Item = ({ item, incrChanges }) => (
     <View style={styles.item}>
-        <Text>{item}</Text>
+        <Text>{item['title']}</Text>
+        <Button title="Done" onPress={() => {
+              item['completed']=true;
+              incrChanges()}} />
+        <Text>{item['completed']?'done':'---'}</Text>
+        <Text>{JSON.stringify(item)}</Text>
     </View>
 );
 
@@ -20,6 +25,12 @@ const Item = ({ item }) => (
 const ToDoList = () => {
     const [todos, setTodos] = useState([]);
     const [todo, setTodo] = useState('');
+    const [count, setCount] = useState(0);
+    const [changes, setChanges] = useState(0);
+
+    const incrChanges = () => {
+        setChanges(changes+1);
+    }
 
     return (
         <View style={styles.container}>
@@ -31,16 +42,19 @@ const ToDoList = () => {
             <Button
                 title="Add ToDo"
                 onPress={() => {
-                    setTodos([...todos, todo]);
+                    let todo_item = {title:todo, completed:false};
+                    //setTodos([...todos, todo_item]);
+                    setTodos(todos.concat(todo_item))
                     setTodo('');
                 }} />
             <Text>
-                {todos}
+                {JSON.stringify(todos)}
             </Text>
             <FlatList
-                data={todos}
-                renderItem={({item}) =>  <Item item={item}/> }
-                keyExtractor={item => item}
+                data={todos.filter(item => !item['completed'])}
+                extraData={changes}
+                renderItem={({item}) =>  <Item item={item} incrChanges={incrChanges}/> }
+                keyExtractor={item => item['title']}
              />
 
         </View>

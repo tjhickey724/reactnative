@@ -13,7 +13,7 @@ function SettingsScreen() {
                 setCurrentValue({...currentValue, username: text});
             }}
         />
-        <Text>{currentValue['username']}</Text>
+        <Text>usename:{currentValue['username']}</Text>
       </View>
     );
   }
