@@ -221,6 +221,9 @@ We have every synchronous student give a short description of their idea for the
 Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project
 
 ### Lesson 6 Tue 6/11/23
+
+We begin by working on the ToDoList app.
+
 All students give demos of the current version of their final projects and discuss what the
 final version should be.
 
