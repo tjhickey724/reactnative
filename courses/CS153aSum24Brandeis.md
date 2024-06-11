@@ -221,6 +221,9 @@ We have every synchronous student give a short description of their idea for the
 Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project
 
 ### Lesson 6 Tue 6/11/23
+All students give demos of the current version of their final projects and discuss what the
+final version should be.
+
 We continue our discussion of useEffect but with a more real API giving the weather 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
 
@@ -229,15 +232,19 @@ and we'll use these to create a simplet weather phone app. This example uses the
 [axios package](https://www.npmjs.com/package/axios) instead of the built-in fetch command. Both are
 quite commonly used in web and mobile app development.
 
-Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
-of persisting data when the app is closed and the reopened.
 
-We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
+
+
 
 
 ## Week 3 Accessing Phone features
 
 ### Lesson 7 Mon 6/17/23
+Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
+of persisting data when the app is closed and the reopened.
+
+We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
+
 We started going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
 on creating a simple phone app using the camera and handling gestures
 We continue working through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/)
