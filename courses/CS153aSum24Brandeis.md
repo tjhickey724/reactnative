@@ -246,7 +246,7 @@ quite commonly used in web and mobile app development.
 Next we look into using the [ReactNative Storage package](https://github.com/sunnylqm/react-native-storage) which provides a way
 of persisting data when the app is closed and the reopened.
 
-We show how it is used in the [Pomorodoros Component](../code/demoSum24/components/Pomorodos.js)
+We show how it is used in the [Pomorodoros Component](../code/demoSum24/components/Pomodoros.js)
 
 We started going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
 on creating a simple phone app using the camera and handling gestures
