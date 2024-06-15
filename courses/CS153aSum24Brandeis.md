@@ -243,7 +243,7 @@ quite commonly used in web and mobile app development.
 ## Week 3 Accessing Phone features
 
 ### Lesson 7 Mon 6/17/23
-Next we look into [AsyncStorage](https://reactnative.dev/docs/asyncstorage) which provides a way
+Next we look into using the [ReactNative Storage package](https://github.com/sunnylqm/react-native-storage) which provides a way
 of persisting data when the app is closed and the reopened.
 
 We show how it is used in the [Pomorodoros Component](../code/AwesomeProject/components/Pomorodos.js)
