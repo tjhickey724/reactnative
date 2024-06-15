@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Text, FlatList, View } from 'react-native';
 
-const Movie = ({ title, releaseYear }) => (
+const Movie = ({ title, releaseYear, id }) => (
     <View style={{backgroundColor:'lightblue'}}>
-        <Text>{title}, {releaseYear}</Text>
+        <Text>{id}: {title} -- {releaseYear}</Text>
     </View>
 );
 
@@ -28,14 +28,18 @@ const APIdemo = () => {
     return(
         <View>
             <Text>API Demo</Text>
+
+            <Text>{loading ? 'Loading...' : ''}</Text>
             
             <FlatList
-                data={data.slice(0,20)}
+                data={data.slice(0,3)}
                 keyExtractor={({ id }, index) => id}
                 renderItem={({ item }) => (
                     <Movie
                         title={item.title}
-                        releaseYear={item.releaseYear}  
+                        releaseYear={item.releaseYear}
+                        id = {item.id}  
+
                     />
                 )}
             />

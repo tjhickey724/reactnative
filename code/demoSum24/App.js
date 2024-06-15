@@ -1,3 +1,3 @@
-import App from './components/ToDoList';
+import App from './components/Pomodoros';
 export default App;
 

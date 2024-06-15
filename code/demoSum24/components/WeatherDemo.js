@@ -20,7 +20,11 @@ const APIdemo = () => {
             return(json);
         } catch (error) {
             console.error(error);
-        } 
+        } finally
+        {
+            setLoading(false);
+            console.log("getJSON done");
+        }
     };
 
 
