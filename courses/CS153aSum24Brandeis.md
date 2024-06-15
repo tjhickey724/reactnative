@@ -67,6 +67,8 @@ and we talk about the React Triggers which cause a page to be redrawn (shallow c
 
 Time permitting we intoduce the useEffect hook and show how to use it to access an API
 
+---
+
 ## Week 2: State and APIs
 
 ### Lesson 5 Mon 6/10/23
@@ -92,7 +94,7 @@ and we'll use these to create a simplet weather phone app. This example uses the
 quite commonly used in web and mobile app development.
 
 
-
+---
 
 
 
