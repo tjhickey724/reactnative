@@ -1,3 +1,3 @@
-import App from './components/Pomodoros';
+import App from './components/AlarmClock';
 export default App;
 
