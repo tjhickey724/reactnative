@@ -6,7 +6,11 @@ https://www.geeksforgeeks.org/create-an-alarm-clock-using-react-native/
 import React, { useState, useEffect } from "react";
 import { View, Text, Button, StyleSheet, Platform, Alert } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
- 
+
+import TimeLog from "../lib/TimeLog.js"
+
+
+
 const AlarmClock = () => {
     const [alarmTime, setAlarmTime] = useState(new Date());
     const [showTimePicker, setShowTimePicker] = useState(false);

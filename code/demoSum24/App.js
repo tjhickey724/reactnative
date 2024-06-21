@@ -1,3 +1,3 @@
-import App from './components/AlarmClock';
+import App from './components/PersistentContext/TopTabs';
 export default App;
 
