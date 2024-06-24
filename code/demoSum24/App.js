@@ -1,3 +1,3 @@
-import App from './components/PersistentContext/TopTabs';
+import App from './components/ChatGPTDemo';
 export default App;
 
