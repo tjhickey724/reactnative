@@ -11,7 +11,7 @@ import ValueProvider from './ValueContext';
 const Tab = createBottomTabNavigator();
 
 export default function App() {
-  const data = {username:'none',status:'admin'};
+  const data = {username:'none',status:'admin', comments=[]};
 
   return (
    <ValueProvider value={data}>

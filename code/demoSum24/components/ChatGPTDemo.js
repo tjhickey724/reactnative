@@ -5,7 +5,7 @@ This is a demo of the OpenAI API in React Native
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text, TextInput, Button, FlatList, View } from 'react-native';
 import axios from 'axios';  // make sure you npm install axios    
-import open_api_key from './open_api_key';  // this is in .gitignore don't push to github
+//import open_api_key from './open_api_key';  // this is in .gitignore don't push to github
 
 
 /*
@@ -23,6 +23,7 @@ const APIdemo = () => {
     const [promptText,setPromptText] = useState("");
     const [prompt,setPrompt] = useState("what is three times five?");
     const [loading,setLoading] = useState(true);
+    const [APIKey,setAPIKey] = useState("");
 
     const getResponse = async () => {
         try {
@@ -30,7 +31,7 @@ const APIdemo = () => {
             const config = {headers: {
                 Accept: 'application/json, text/plain, */*',
                 'Content-Type': 'application/json',
-                Authorization: 'Bearer '+open_api_key,
+                Authorization: 'Bearer '+APIKey,
               },}
             const msg_data = {
                 "model": "gpt-3.5-turbo",
@@ -70,6 +71,12 @@ const APIdemo = () => {
                 style={{ height: 40, borderColor: 'gray', borderWidth: 1, padding:10, margin:10 }}
                 onChangeText={text => setPromptText(text)}
                 value={promptText}
+            />
+            <Text>Enter the API Key:</Text>
+            <TextInput 
+                style={{ height: 40, borderColor: 'red', borderWidth: 1, padding:10, margin:10 }}
+                onChangeText = {text => setAPIKey(text)}
+                value = {APIKey}
             />
 
             <Button
