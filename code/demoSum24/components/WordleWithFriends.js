@@ -21,7 +21,7 @@ const App = () => {
     const [gameOver, setGameOver] = useState(false);
     const [guesses, setGuesses] = useState([]);
     const [debugging,setDebugging] = useState(false);  /* debugging mode */
-    const [group,setGroup] = useState('cs153aSum23'); 
+    const [group,setGroup] = useState('cs153aSum24'); 
     const [scores,setScores] = useState([]);
     const [username,setUsername] = useState('anon'); /* username for high score */
     const [gamesPlayed,setGamesPlayed] = useState(0); /* number of games played */
@@ -32,8 +32,8 @@ const App = () => {
 
     const server1 = 'http://gracehopper.cs-i.brandeis.edu:3000';
     const server2 = 'http://localhost:3000';
-    const server3 = 'https://ff14-209-6-142-225.ngrok-free.app';
-    const server = server2;
+    const server3 = 'https://6f5f-209-6-142-225.ngrok-free.app';
+    const server = server3;
 
     const getScores = async () => {
         try {
@@ -52,7 +52,7 @@ const App = () => {
                 await axios(
                     {method: 'post',
                     url: server+'/room',
-                    data: {room_id:group, user_id:username, data:word},
+                    data: {id:group, uid:username, data:word},
                     }); 
         }
         catch(error){d

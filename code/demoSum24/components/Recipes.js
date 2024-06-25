@@ -5,6 +5,22 @@ const Recipes = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [ingredient, setIngredient] = useState('');
+  const [clubs,setClubs] = useState([]);
+  const clubURL = "https://raw.githubusercontent.com/tjhickey724/reactnative/main/code/clubs.json";
+
+  const getClubs = async () => {
+    try {
+      const url = clubURL;
+      const response = await fetch(url);
+      console.log('response ='+JSON.stringify(response))
+      const json = await response.json();
+      setClubs(json);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const getMeals = async () => {
     try {
@@ -23,9 +39,15 @@ const Recipes = () => {
     getMeals();
   }, []);
 
+
+  useEffect(() => {
+    getClubs();
+  }, []);
+
   const handleSearch = () => {
     setLoading(true);
     getMeals();
+    getClubs();
   };
 
   const renderMeal = ({ item }) => (
@@ -37,8 +59,8 @@ const Recipes = () => {
           borderColor: 'black',
           borderRadius: 1,
           padding: 5,
-          width: 300,
-          height: 120,
+          width: 600,
+          height: 320,
           flexDirection: 'row',
           alignItems: 'center',
         }}
@@ -46,14 +68,16 @@ const Recipes = () => {
         <Text style={{ marginRight: 5, marginLeft: 10, flex: 1, marginTop: -50 }}>{item.strMeal}</Text>
         <Image
           source={{ uri: item.strMealThumb }}
-          style={{ width: 75, height: 75, marginRight: 50 }}
+          style={{ width: 250, height:250, marginRight: 50 }}
         />
       </View>
+
     </View>
   );
 
   return (
     <View>
+            <Text>{JSON.stringify(clubs)}</Text>
       <Text style={{ color: 'black', fontSize: 70, textAlign: 'left', marginBottom: 10 }}>Meal Finder</Text>
       <TextInput
         style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
@@ -71,6 +95,7 @@ const Recipes = () => {
           renderItem={renderMeal}
         />
       )}
+
     </View>
   );
 };

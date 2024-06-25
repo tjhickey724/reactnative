@@ -35,6 +35,8 @@ app.get("/room", (req,res,next) => {
 })
 
 app.post("/room", (req,res,next) => {
+  console.log('handling post request to room')
+  console.dir(req.body)
   const id = req.body.id;
   const uid = req.body.uid;
   const data = req.body.data;
@@ -44,6 +46,7 @@ app.post("/room", (req,res,next) => {
     rooms[id] = {};
     rooms[id][uid] = data;
   }
+  res.json(rooms[id])
 });
 
 // catch 404 and forward to error handler

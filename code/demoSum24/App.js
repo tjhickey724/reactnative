@@ -1,3 +1,3 @@
-import App from './components/ChatGPTDemo';
+import App from './components/WordleWithFriends';
 export default App;
 

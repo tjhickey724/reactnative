@@ -1,34 +1,28 @@
 /*
-  still need to 
-  check for end of game, i.e. correct answer or 6 incorrect guesses
-  and improve the style a bit ... 
+  Simple demo to show we can communicate with a server
+  This contains two async methods ..
+    getString to get a score from the server
+    saveString to save a score from a server
+  The idea is to be able to have any user save a string
+  and to also pull down a string. I can run this in
+  two browsers and see them communicate. Either can store
+  and either can read. We need a store button and a read button.
+  This is a minimal app but could be the basis of many apps.
 */
 
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, View, FlatList, Text, TextInput, StyleSheet, Button } from 'react-native';
-import words5 from '../assets/words5a';
-import {pick_random_word,analyze_guess} from '../lib/words';
-import GuessList from '../components/GuessList';
-import WordleButton from '../components/WordleButton';
 import axios from 'axios';
 
 
 
 const App = () => {
-    const [word, setWord] = useState(pick_random_word(words5));
-    const [guessNum, setGuessNum] = useState(0)
-    const [guess, setGuess] = useState("");
-    const [gameOver, setGameOver] = useState(false);
-    const [guesses, setGuesses] = useState([]);
-    const [debugging,setDebugging] = useState(false);  /* debugging mode */
-    const [group,setGroup] = useState('cs153aSum23'); 
+    const [word, setWord] = useState("start");
     const [scores,setScores] = useState([]);
-    const [username,setUsername] = useState('anon'); /* username for high score */
-    const [gamesPlayed,setGamesPlayed] = useState(0); /* number of games played */
-    
-    const validateGuess = (guess) =>{
-        return guess.length ==5;
-    };
+    const username="test";
+    const group="153a";
+
+
 
     const server1 = 'http://gracehopper.cs-i.brandeis.edu:3000';
     const server2 = 'http://localhost:3000';
@@ -47,7 +41,6 @@ const App = () => {
 
     const saveScore = async (word) => {
         try {
-            setGamesPlayed(gamesPlayed+1);
             let score = 
                 await axios(
                     {method: 'post',
@@ -62,13 +55,13 @@ const App = () => {
 
     };
 
-    useEffect(() => getScores,[gamesPlayed]);
+    useEffect(() => getScores,[]);
 
   
 
   return (
     <SafeAreaView style={styles.container}>
-        <Text style={styles.header}>Random Word App</Text>
+        <Text style={styles.header}>Server Demo App</Text>
         <View style={{flex:1,flexDirection:'row'}}>
             <TextInput 
                 style={{width:150, fontSize:10,
@@ -91,30 +84,7 @@ const App = () => {
             </View>
 
 
-      {gameOver?
-        <>
-              <WordleButton title="Reset" 
-                  onPress = {() => {
-                        setWord(pick_random_word(words5));
-                        setGuesses([]);
-                        setGuessNum(0);
-                        {/* JF - clear guess box */}
-                        setGuess('');
-                        setGameOver(false);
-                      }}/>
-              <FlatList
-                      data={scores['data']}
-                      keyExtractor={({ id },index) => index}
-                      renderItem={({item}) => (
-                          <View style={{flex:1,flexDirection:'row'}}> 
-                              <Text>{item.user_id}: </Text>
-                              <Text>{item.data}</Text> 
-                          </View>
-                      )}
-                  />
-          </>
-         : 
-      <>
+      
         <Text> Make a guess </Text>
         <View style={{flex:1,flexDirection:'row'}}>
             <TextInput  

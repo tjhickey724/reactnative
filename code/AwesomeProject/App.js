@@ -1,3 +1,3 @@
 
-import App from './components/WeatherDemo';
+import App from './components/LatLonDemo';
 export default App;

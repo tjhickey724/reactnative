@@ -33,9 +33,12 @@ const APIdemo = () => {
                 'Content-Type': 'application/json',
                 Authorization: 'Bearer '+APIKey,
               },}
+            const prefix = 
+            " "
+
             const msg_data = {
                 "model": "gpt-3.5-turbo",
-                "messages": [{"role": "user", "content": prompt}],
+                "messages": [{"role": "user", "content": prefix+prompt}],
                 "temperature": 0.7
               }
             const response =
