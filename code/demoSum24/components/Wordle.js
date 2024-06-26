@@ -18,7 +18,7 @@ const App = () => {
   const [guess, setGuess] = useState("");
   const [gameOver, setGameOver] = useState(false);
   const [guesses, setGuesses] = useState([]);
-  const [debugging,setDebugging] = useState(false);  /* debugging mode */
+  const [debugging,setDebugging] = useState(true);  /* debugging mode */
   console.log('words5 has length',words5.length);
 
 const validateGuess = (guess) =>{
