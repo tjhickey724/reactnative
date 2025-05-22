@@ -14,7 +14,7 @@ using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
 ## Week 1
 
-### Lesson 1 Tue 6/3/25
+### Lesson 1 Wed 6/4/25
 We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
 [reactnative.dev](https://reactnative.dev) website.
 
@@ -28,7 +28,9 @@ especially if you are using Visual Studio Code with Github Copilot chat.
 We will work through the Getting Started tutorial at a superficial level,
 learning how to modify the code in the Snack IDE.
 
-### Lesson 2 Wed 6/4/25
+
+
+### Lesson 2 Thu 6/5/25
 We cycle back and  analyze the code line-by-line to obtain a deeper
 understanding both of Javascript and of React Native.
 
@@ -36,8 +38,6 @@ Then we look at the Design document and learn [how to layout components nicely](
 
 By the end of the week everyone should be able to create simple interactive Mobile Apps
 and to explain how they work, line by line.
-
-### Lesson 3 Thu 6/5/25
 [Running React Native Locally](../notes/runningRNlocally.md)
 
 ---
@@ -48,7 +48,7 @@ and to explain how they work, line by line.
 
 ---
 
-### Lesson 4 Mon 6/9/25
+### Lesson 3 Mon 6/9/25
 We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
 We work through the examples for Stack, Tab, and Drawer navigation.
 
