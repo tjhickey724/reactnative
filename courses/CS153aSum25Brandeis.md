@@ -12,7 +12,12 @@ by many companies to create their apps. Here is a [Gallery](https://reactnative.
 Expo is a nice tool as it provides an easy way to write and run apps on your phone
 using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
-## Week 1
+# Week 1
+
+## Week 1 Programming Projects
+* [PA1](./projects/pa1) Programming Projects for Week 1 due Monday 6/8 before class
+
+
 
 ### Lesson 1 Wed 6/4/25
 We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
