@@ -15,7 +15,7 @@ using [all of the phones features](https://docs.expo.dev/versions/latest/).
 # Week 1
 
 ## Week 1 Programming Projects
-* [PA1](./projects/pa1) Programming Projects for Week 1 due Monday 6/8 before class
+* Programming Projects for Week 1 due Monday 6/8 before class, submit on the Mastery Learning App
 
 
 
@@ -50,6 +50,11 @@ and to explain how they work, line by line.
 ---
 
 ## Week 2: State and APIs
+
+---
+
+## Week 2 Programming Projects
+* Programming Projects for Week 2 due Monday 6/15 before class, submit on the Mastery Learning App
 
 ---
 
@@ -133,6 +138,12 @@ understand the javascript and the react native code.
 
 ---
 
+## Week 3 Programming Projects
+* Programming Projects for Week 3 due Monday 6/22 before class, submit on the Mastery Learning App
+
+---
+
+
 ### Lesson 8 Mon 6/16/23
 We have all students demo the current versions of their Final Project Apps
 and give feedback to each other. We also look over the asynchronous students apps from last week
@@ -157,6 +168,11 @@ with a clear and easy to use UI.
 
 ---
 
+## Week 4 Programming Projects
+* Programming Projects for Week 4 due Monday 6/29 before class, submit on the Mastery Learning App
+
+---
+
 ### Lesson 11 Mon 6/23/23
 We have our demo day when all students give demos of their apps and review other students' apps.
 We also review the asynchronous students apps....
@@ -173,6 +189,12 @@ We also review the asynchronous students apps....
 
 ## Week 5 
 
+---
+
+## Week 5 Programming Projects
+* Programming Projects for Week 1 due Monday 6/8 before class, submit on the Mastery Learning App
+
+---
 
 ### Lesson 15 Mon 6/30/25
 
