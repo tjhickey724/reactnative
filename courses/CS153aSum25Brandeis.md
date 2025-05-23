@@ -12,6 +12,10 @@ by many companies to create their apps. Here is a [Gallery](https://reactnative.
 Expo is a nice tool as it provides an easy way to write and run apps on your phone
 using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
+Our plan this summer is to teach you how understand at a fundamental level how React Native apps are designed and to leverage the power of modern AI LLMs to rapidly build and deploy sophisticated apps...
+
+---
+
 # Week 1
 
 ## Week 1 Programming Projects
