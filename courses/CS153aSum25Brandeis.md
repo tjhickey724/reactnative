@@ -1,4 +1,4 @@
-# CS153a Sum2024  Mobile Application Development
+# CS153a Sum2025  Mobile Application Development
 this file contains notes from the Mobile App Development class
 and is a supplement to our Latte pages which contain links to the
 zoom sessions, screen recordings, homework assignments, announcements,
@@ -13,6 +13,10 @@ Expo is a nice tool as it provides an easy way to write and run apps on your pho
 using [all of the phones features](https://docs.expo.dev/versions/latest/).
 
 Our plan this summer is to teach you how understand at a fundamental level how React Native apps are designed and to leverage the power of modern AI LLMs to rapidly build and deploy sophisticated apps...
+
+You will be using LLMs to help build apps. The main LLM will be https://gemini.google.com which is accessible to Brandeis students,
+but please feel free to try others. One of our major goals this summer is to learn how to effectively use LLMs to enhance your 
+understanding of programming apps and to speed your development process.
 
 ---
 
@@ -41,11 +45,12 @@ learning how to modify the code in the Snack IDE.
 
 ### Lesson 2 Thu 6/5/25
 We cycle back and  analyze the code line-by-line to obtain a deeper
-understanding both of Javascript and of React Native.
+understanding both of Javascript and of React Native. We also experiment with asking LLMs 
+to help us understand the code.
 
 Then we look at the Design document and learn [how to layout components nicely](../notes/component_layout.md) in React Native.
 
-By the end of the week everyone should be able to create simple interactive Mobile Apps
+By the end of the week everyone should be able to create simple interactive Mobile Apps from scratch, and by proper prompting of LLMs,
 and to explain how they work, line by line.
 [Running React Native Locally](../notes/runningRNlocally.md)
 
@@ -105,7 +110,7 @@ Everyone will comment on each project, give suggestions for how it could be impr
 
 ### Lesson 6 Wed 6/11/25
 
-We begin by working on the ToDoList app.
+We begin by working on the Pomodoro app.
 
 We continue our discussion of useEffect but with a more real API giving the weather 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
@@ -123,9 +128,9 @@ quite commonly used in web and mobile app development.
 
 ### Lesson 7 Thu 6/12/23
 Next we look into using the [ReactNative Storage package](https://github.com/sunnylqm/react-native-storage) which provides a way
-of persisting data when the app is closed and the reopened.
+of persisting data when the app is closed and then reopened.
 
-We show how it is used in the [Pomorodoros Component](../code/demoSum24/components/Pomodoros.js)
+We show how it is used in the [Pomorodoros Component](../code/demoSum25/)
 
 We start going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
 on creating a simple phone app using the camera and handling gestures
