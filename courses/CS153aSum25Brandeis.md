@@ -69,7 +69,8 @@ that will require some software installation which you ought to do over the week
 
 ## Week 2 Programming Projects
 * Programming Projects for Week 2 due Monday 6/15 before class, submit on the Mastery Learning App
-
+  - Exam 2
+  - Project 2
 ---
 
 ### Lesson 3 Mon 6/9/25
@@ -108,7 +109,7 @@ Time permitting we intoduce the useEffect hook and show how to use it to access 
 
 
 ### Lesson 5 Tue 6/10/25
-We continue the ToDoList demo and explore ways to access state of parent and/or child components
+We continue a ToDoList demo and explore ways to access state of parent and/or child components
 We also look closely at the Javascript needed to implement this app.
 We have every synchronous student give a short description of their idea for their final app, and a quick demo of what they have now. 
 
@@ -119,7 +120,7 @@ Everyone will comment on each project, give suggestions for how it could be impr
 
 ### Lesson 6 Wed 6/11/25
 
-We begin by working on the Pomodoro app.
+We begin by working on a Pomodoro app and we show how to create an intial version using LLMs.
 
 We continue our discussion of useEffect but with a more real API giving the weather 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
@@ -145,7 +146,9 @@ We start going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/in
 on creating a simple phone app using the camera and handling gestures
 We continue working through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/)
 and we work on making our own modifications and tweaks of the code as well as making sure we fully 
-understand the javascript and the react native code.
+understand the javascript and the react native code. Homework (due Monday) is to complete the tutorial
+and submit a demo where you have modified the app in some interesting way...
+
 
 ---
 
@@ -158,7 +161,8 @@ understand the javascript and the react native code.
 
 ## Week 3 Programming Projects
 * Programming Projects for Week 3 due Monday 6/22 before class, submit on the Mastery Learning App
-
+  - Exam 3
+  - Proj 3
 ---
 
 
@@ -168,15 +172,14 @@ and give feedback to each other. We also look over the asynchronous students app
 and we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
 
 ### Lesson 9 Tue 6/17/23
-We work on interacting with chatGPT.
+We work on interacting with LLMs using an API
 
 Also we practice writing javascript for word games like wordle...
 
 
 
 ### Lesson 10 Mon 6/18/23
-We work together at completing the Wordle app and getting it to work nicely on the phone
-with a clear and easy to use UI.
+TBA
 
 ---
 
@@ -196,10 +199,13 @@ We have our demo day when all students give demos of their apps and review other
 We also review the asynchronous students apps....
 
 ### Lesson 12 Tue 6/24/23
+TBA
 
 ### Lesson 13 Wed 6/25/23
+TBA
 
 ### Lesson 14 Thu 6/26/25
+TBA
 
 ---
 
@@ -215,14 +221,17 @@ We also review the asynchronous students apps....
 ---
 
 ### Lesson 15 Mon 6/30/25
+TBA
 
 ### Lesson 17 Tue 7/1/25
+TBA
 
 ### Lesson 18 Tue 7/2/25
-
-### Lesson 19 Tue 7/3/25
-We have our final project showcase today.
+We have our final project showcase the last two days of class.
 All students give demos of their apps and answer questions.
 We also review all of the asynchronous students apps.
+
+### Lesson 19 Tue 7/3/25
+We have our final project showcase the last two days of class.
 
 
