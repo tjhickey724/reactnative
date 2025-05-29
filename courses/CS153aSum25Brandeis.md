@@ -54,7 +54,10 @@ Then we look at the Design document and learn [how to layout components nicely](
 
 By the end of the week everyone should be able to create simple interactive Mobile Apps from scratch, and by proper prompting of LLMs,
 and to explain how they work, line by line.
-[Running React Native Locally](../notes/runningRNlocally.md)
+
+Next week we will learn how to [Running React Native Locally](../notes/runningRNlocally.md) and
+that will require some software installation which you ought to do over the weekend.
+
 
 ---
 
@@ -70,10 +73,14 @@ and to explain how they work, line by line.
 ---
 
 ### Lesson 3 Mon 6/9/25
-We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
-We work through the examples for Stack, Tab, and Drawer navigation.
+We begin by showing how to set up the software needed to 
+[Running React Native Locally](../notes/runningRNlocally.md)
 
-We discuss the relationaship between three front end frameworks
+We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
+We work through the examples for Stack, Tab, and Drawer navigation. We will use the file-based
+navigation approach
+
+We briefly discuss the relationaship between three front end frameworks
 * [React](https://react.dev)
 * [React Native](https://reactnative.dev),
 * [Expo](https://docs.expo.dev/)
