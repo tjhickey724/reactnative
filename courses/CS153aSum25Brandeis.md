@@ -24,6 +24,8 @@ understanding of programming apps and to speed your development process.
 
 ## Week 1 Programming Projects
 * Programming Projects for Week 1 due Monday 6/8 before class, submit on the Mastery Learning App
+  - Exam 1
+  - Project 1
 
 
 
