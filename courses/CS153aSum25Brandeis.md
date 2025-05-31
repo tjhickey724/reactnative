@@ -30,7 +30,10 @@ understanding of programming apps and to speed your development process.
 
 
 ### Lesson 1 Wed 6/4/25
-We begin by looking at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
+We begin by going over the syllabus and introducing ourselves on the Mastery Learning App.
+Then we brainstorm about possible mobile app ideas
+
+Next we look at the [getting_started](https://reactnative.dev/docs/getting-started) tutorial at the
 [reactnative.dev](https://reactnative.dev) website.
 
 I'll assume you either are already familiar with Javascript, 
@@ -39,6 +42,8 @@ to familiarize yourself with the main features of the language.
 You should already be strong Java programmers and possibly also have Python experience. 
 It will not be hard to learn how to code effectively in Javascript, 
 especially if you are using Visual Studio Code with Github Copilot chat.
+We will explain Javascript concepts as they arise in the coding, but it doesn't hurt to look over the
+documentation to get a general idea about how the language works.
 
 We will work through the Getting Started tutorial at a superficial level,
 learning how to modify the code in the Snack IDE.
@@ -75,7 +80,7 @@ that will require some software installation which you ought to do over the week
 
 ### Lesson 3 Mon 6/9/25
 We begin by showing how to set up the software needed to 
-[Running React Native Locally](../notes/runningRNlocally.md)
+[Run React Native Locally](../notes/runningRNlocally.md)
 
 We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
 We work through the examples for Stack, Tab, and Drawer navigation. We will use the file-based
