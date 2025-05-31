@@ -82,7 +82,8 @@ that will require some software installation which you ought to do over the week
 We begin by showing how to set up the software needed to 
 [Run React Native Locally](../notes/runningRNlocally.md)
 
-We show how to use [React Navigation](https://reactnavigation.org/) to make a multi-page app.
+We show how to use the [file-based Expo Router](https://docs.expo.dev/develop/file-based-routing/)
+to make a multi-page app.
 We work through the examples for Stack, Tab, and Drawer navigation. We will use the file-based
 navigation approach
 
