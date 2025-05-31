@@ -44,7 +44,7 @@ All of the Pomodoros would be saved in Asynchronous Storage.
 Try to make the app look nice on a mobile device.
 ```
 
-Here is the app [Pomodoros]{https://snack.expo.dev/@tjhickey/privileged-violet-tortillas)
+Here is the app [Pomodoros](https://snack.expo.dev/@tjhickey/privileged-violet-tortillas)
 
 Then we brainstorm about possible mobile app ideas
 
