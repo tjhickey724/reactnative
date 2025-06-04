@@ -1,3 +1,20 @@
+/* 
+This app was created by using claude.ai with the following prompt,
+and the resulting code was slightly modified...
+
+I would like you to build a first version of a Mobile App using the React Native framework. 
+The app is designed for people learning Brazilian Jiujitsu. 
+The user starts by completing an initial profile with their name and belt. 
+The app will keep track of the skill you know and the skills you are working on. 
+The app will keep track of those skills and will recommend new skills for you to learn. 
+The skills should be organized into groups, 
+e.g. takedowns would contain single-leg, double-leg, hip-toss, etc; 
+guard passing would contain torreando, knee cut, etc; 
+sweeps would contain scissors sweep, pendulum sweep, tripod sweep, etc. 
+The user should be able to move skills from the "working on" category to the "know" category, 
+and to add new skills to the "working on" category.
+
+*/
 import { Picker } from '@react-native-picker/picker';
 import { useState } from 'react';
 import {
