@@ -1,3 +1,16 @@
+/*
+This app was created by giving the following prompt to gemini.google.com
+and the making some minor edits afterwards.
+
+I am making a React Native app to implement the Pomodoro technique. 
+Create for me a React Native app in one file which allows the user 
+to give a title to the Pomodoro and press a button which starts a timer, 
+and then plays a sound in 25 minutes. 
+The user can then add a comment to the Pomodoro and save it. 
+All of the Pomodoros would be saved in Asynchronous Storage. 
+Try to make the app look nice on a mobile device.
+*/
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Audio } from 'expo-av';
 import React, { useEffect, useRef, useState } from 'react';
