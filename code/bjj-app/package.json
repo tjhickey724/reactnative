@@ -1,5 +1,5 @@
 {
-  "name": "demosum25",
+  "name": "bjj-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -12,21 +12,16 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
-    "@react-native-async-storage/async-storage": "^2.1.2",
-    "@react-native-picker/picker": "^2.11.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
     "expo": "~53.0.9",
-    "expo-audio": "^0.4.5",
-    "expo-av": "^15.1.4",
     "expo-blur": "~14.1.4",
     "expo-constants": "~17.1.6",
     "expo-font": "~13.3.1",
     "expo-haptics": "~14.1.4",
     "expo-image": "~2.1.7",
     "expo-linking": "~7.1.5",
-    "expo-notifications": "^0.31.2",
     "expo-router": "~5.0.6",
     "expo-splash-screen": "~0.30.8",
     "expo-status-bar": "~2.2.3",
@@ -46,9 +41,9 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
+    "typescript": "~5.8.3",
     "eslint": "^9.25.0",
-    "eslint-config-expo": "~9.2.0",
-    "typescript": "~5.8.3"
+    "eslint-config-expo": "~9.2.0"
   },
   "private": true
 }

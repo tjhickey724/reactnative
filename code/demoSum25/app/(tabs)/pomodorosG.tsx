@@ -2,21 +2,20 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Audio } from 'expo-av';
 import React, { useEffect, useRef, useState } from 'react';
 import {
-    Alert,
-    FlatList,
-    Keyboard,
-    Platform,
-    SafeAreaView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    Vibration,
-    View,
+  Alert,
+  FlatList,
+  Keyboard,
+  Platform,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 
-const POMODORO_DURATION = 1 * 60; // 25 minutes in seconds
-const SHORT_BREAK_DURATION = 1 * 60; // 5 minutes for a short break (optional)
+const POMODORO_DURATION = 25*60 ; // 25 minutes in seconds
+const SHORT_BREAK_DURATION = 5 * 60; // 5 minutes for a short break (optional)
 
 export default function App() {
   const [title, setTitle] = useState('');
@@ -29,11 +28,22 @@ export default function App() {
   const [sound, setSound] = useState();
   const intervalRef = useRef(null);
 
+  const showAlert = (title, message, buttons = []) => {
+    if (Platform.OS === 'web') {
+      const result = window.confirm(`${title}\n${message}`);
+      if (result && buttons[0]?.onPress) {
+        buttons[0].onPress();
+      }
+    } else {
+      Alert.alert(title, message, buttons);
+    }
+  };
+
   // Load pomodoros from storage
   useEffect(() => {
     const loadPomodoros = async () => {
       try {
-        const storedPomodoros = await AsyncStorage.getItem('pomodoros');
+        const storedPomodoros = await AsyncStorage.getItem('gpomodoros');
         if (storedPomodoros !== null) {
           setPomodoros(JSON.parse(storedPomodoros));
         }
@@ -48,12 +58,12 @@ export default function App() {
   useEffect(() => {
     const savePomodoros = async () => {
       try {
-        await AsyncStorage.setItem('pomodoros', JSON.stringify(pomodoros));
+        await AsyncStorage.setItem('gpomodoros', JSON.stringify(pomodoros));
       } catch (e) {
         console.error("Failed to save pomodoros.", e);
       }
     };
-    if (pomodoros.length > 0 || (pomodoros.length === 0 && AsyncStorage.getItem('pomodoros') !== null) ) { // only save if there are changes
+    if (pomodoros.length > 0 || (pomodoros.length === 0 && AsyncStorage.getItem('gpomodoros') !== null) ) { // only save if there are changes
         savePomodoros();
     }
   }, [pomodoros]);
@@ -68,8 +78,8 @@ export default function App() {
             clearInterval(intervalRef.current);
             setIsActive(false);
             playSound();
-            Vibration.vibrate([500, 500, 500]); // Vibrate 3 times
-            Alert.alert(
+            //Vibration.vibrate([500, 500, 500]); // Vibrate 3 times
+            showAlert(
               isBreak ? "Break Over!" : "Pomodoro Finished!",
               isBreak ? "Time to get back to work!" : "Time for a break or save your session.",
               [{ text: "OK",
@@ -117,7 +127,7 @@ export default function App() {
         setSound(sound);
       } catch (error) {
         console.error("Failed to load sound", error);
-        Alert.alert("Sound Error", "Could not load notification sound. Make sure 'alarm.mp3' is in the 'assets' folder.");
+        showAlert("Sound Error", "Could not load notification sound. Make sure 'alarm.mp3' is in the 'assets' folder.");
       }
     };
     loadSound();
@@ -152,7 +162,7 @@ export default function App() {
 
   const handleStartPomodoro = () => {
     if (!title.trim()) {
-      Alert.alert("No Title", "Please enter a title for your Pomodoro.");
+      showAlert("No Title", "Please enter a title for your Pomodoro.");
       return;
     }
     Keyboard.dismiss();
@@ -171,7 +181,7 @@ export default function App() {
   };
 
   const handleReset = () => {
-    Alert.alert(
+    showAlert(
         "Reset Timer",
         "Are you sure you want to reset the current Pomodoro? Progress will be lost.",
         [
@@ -195,15 +205,15 @@ export default function App() {
 
   const handleSavePomodoro = () => {
     if (!currentPomodoroId) {
-      Alert.alert("Error", "No active Pomodoro to save.");
+      showAlert("Error", "No active Pomodoro to save.");
       return;
     }
     if (isActive) {
-        Alert.alert("Timer Active", "Please pause or wait for the timer to finish before saving.");
+        showAlert("Timer Active", "Please pause or wait for the timer to finish before saving.");
         return;
     }
      if (timer > 0 && !isBreak) {
-        Alert.alert(
+        showAlert(
             "Timer Not Finished",
             "The Pomodoro timer hasn't finished. Do you want to save it as incomplete?",
             [
@@ -216,13 +226,23 @@ export default function App() {
     }
   };
 
+  /*
+    const newPomodoro = {
+      id: currentPomodoroId || Date.now().toString(),
+      title: title.trim(),
+      comment: comment.trim(),
+      completedAt: new Date().toISOString(),
+      duration: 25, // minutes
+    };
+  */
+
   const saveCurrentPomodoro = (completed) => {
     setPomodoros(prevPomodoros =>
         prevPomodoros.map(p =>
           p.id === currentPomodoroId ? { ...p, comment, completedTime: new Date().toISOString(), completed } : p
         )
       );
-      Alert.alert("Pomodoro Saved!", 
+      showAlert("Pomodoro Saved!", 
         `"${title}" has been saved.`);
       setTitle('');
       setComment('');
@@ -233,11 +253,11 @@ export default function App() {
 
   const handleStartBreak = () => {
     if (isActive) {
-        Alert.alert("Pomodoro Active", "Cannot start a break while a Pomodoro is running.");
+        showAlert("Pomodoro Active", "Cannot start a break while a Pomodoro is running.");
         return;
     }
     if (timer > 0 && !isBreak) {
-         Alert.alert("Pomodoro Not Finished", "Complete or save the current Pomodoro before starting a break.");
+         showAlert("Pomodoro Not Finished", "Complete or save the current Pomodoro before starting a break.");
         return;
     }
     setTimer(SHORT_BREAK_DURATION);

@@ -1,7 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Audio } from 'expo-av';
 import React, { useEffect, useRef, useState } from 'react';
 import {
   Alert,
+  Platform,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -13,29 +15,46 @@ import {
 } from 'react-native';
 
 const PomodoroApp = () => {
-  const pomodoroDuration = 25 * 60; // 25 minutes in seconds
+  const pomodoroDuration = 25*60; // 25 minutes in seconds
   const [title, setTitle] = useState('');
   const [comment, setComment] = useState('');
-  const [timeLeft, setTimeLeft] = useState(25 * 60); // 25 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(pomodoroDuration); 
   const [isActive, setIsActive] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
   const [pomodoros, setPomodoros] = useState([]);
   const [currentPomodoroId, setCurrentPomodoroId] = useState(null);
-  
+  const [sound, setSound] = useState();
+  const [startTime, setStartTime] = useState(null);
+
+
   const intervalRef = useRef(null);
   const soundRef = useRef(null);
 
+  const showAlert = (title, message, buttons = []) => {
+  if (Platform.OS === 'web') {
+    const result = window.confirm(`${title}\n${message}`);
+    if (result && buttons[0]?.onPress) {
+      buttons[0].onPress();
+    }
+  } else {
+    Alert.alert(title, message, buttons);
+  }
+};
+
   useEffect(() => {
+
     loadPomodoros();
-    loadSound();
+    //startAudio();
     return () => {
       if (soundRef.current) {
         soundRef.current.unloadAsync();
       }
     };
-  }, []);
+  }, []); 
 
   useEffect(() => {
+    
+    console.log(['****** alert',isActive,timeLeft]);
     if (isActive && timeLeft > 0) {
       intervalRef.current = setInterval(() => {
         setTimeLeft(timeLeft => timeLeft - 1);
@@ -44,7 +63,7 @@ const PomodoroApp = () => {
       setIsActive(false);
       setIsCompleted(true);
       playSound();
-      Alert.alert(
+      showAlert(
             'Pomodoro Complete!', 
             'Great job! Your 25-minute session is done.',
             [
@@ -54,7 +73,7 @@ const PomodoroApp = () => {
               }
             ]
           );
-      //Alert.alert('Pomodoro Complete!', 'Great job! Your 25-minute session is done.');
+      setTimeLeft(pomodoroDuration); // Reset time left for next session
     } else {
       clearInterval(intervalRef.current);
     }
@@ -62,48 +81,51 @@ const PomodoroApp = () => {
     return () => clearInterval(intervalRef.current);
   }, [isActive, timeLeft]);
 
-const loadSound = async () => {
-  try {
-    await Audio.requestPermissionsAsync();
-    await Audio.setAudioModeAsync({
-      allowsRecordingIOS: false,
-      staysActiveInBackground: false,
-      playsInSilentModeIOS: true,
-      shouldDuckAndroid: true,
-      playThroughEarpieceAndroid: false,
-    });
-    
-    const { sound } = await Audio.Sound.createAsync(
-      require('../../assets/alarm.mp3'), // Your actual sound file
-      { shouldPlay: false }
-    );
-    soundRef.current = sound;
-  } catch (error) {
-    console.log('Error loading sound:', error);
-  }
-};
+   // Sound setup
+    useEffect(() => {
+      const loadSound = async () => {
+        try {
+          const { sound } = await Audio.Sound.createAsync(
+             require('../../assets/alarm.mp3') // MAKE SURE YOU HAVE 'alarm.mp3' in an 'assets' folder
+          );
+  
+          setSound(sound);
+        } catch (error) {
+          console.error("Failed to load sound", error);
+          showAlert("Sound Error", "Could not load notification sound. Make sure 'alarm.mp3' is in the 'assets' folder.");
+        }
+      };
+      loadSound();
+  
+      return () => {
+        if (sound) {
+          sound.unloadAsync();
+        }
+      };
+    }, []);
 
-  const playSound = async () => {
-    try {
-      if (soundRef.current) {
-        await soundRef.current.replayAsync();
+ const playSound = async () => {
+    if (sound) {
+      try {
+        await sound.replayAsync();
+      } catch (e) {
+        console.error("Failed to play sound", e);
       }
-    } catch (error) {
-      console.log('Error playing sound:', error);
     }
   };
-  
 
   const stopSound = async () => {
-    try {
-      if (soundRef.current) {
-        await soundRef.current.stopAsync();
+    if (sound) {
+      try {
+        console.log('Stopping Sound');
+        await sound.stopAsync();
+      } catch (e) {
+        console.error("Failed to stop sound", e);
       }
-    } catch (error) {
-      console.log('Error stopping sound:', error);
     }
   };
 
+  
 
   const loadPomodoros = async () => {
     try {
@@ -125,9 +147,21 @@ const loadSound = async () => {
     }
   };
 
+  const clearPomodoros = async () => {
+  try {
+    await AsyncStorage.removeItem('pomodoros');
+    console.log('Pomodoros data cleared');
+    setPomodoros([]); // Reset local state
+  } catch (error) {
+    console.log('Error clearing pomodoros:', error);
+  }
+};
+
   const startTimer = () => {
+    console.log('Starting Timer');
     if (!title.trim()) {
-      Alert.alert('Title Required', 'Please enter a title for your Pomodoro session.');
+      console.log('Title Required');
+      showAlert('Title Required', 'Please enter a title for your Pomodoro session.');
       return;
     }
     
@@ -135,28 +169,34 @@ const loadSound = async () => {
     setCurrentPomodoroId(newId);
     setIsActive(true);
     setIsCompleted(false);
-    setTimeLeft(25 * 60);
+    setStartTime(new Date());
+    setTimeLeft(pomodoroDuration);
   };
 
   const stopTimer = () => {
     setIsActive(false);
-    setTimeLeft(25 * 60);
+    setTimeLeft(pomodoroDuration);
     setIsCompleted(false);
     setCurrentPomodoroId(null);
   };
 
   const savePomodoro = async () => {
     if (!title.trim()) {
-      Alert.alert('Title Required', 'Please enter a title to save this Pomodoro.');
+      showAlert('Title Required', 'Please enter a title to save this Pomodoro.');
       return;
     }
+
+    let stopTime = new Date();
+    console.log('duration', stopTime, startTime, stopTime - startTime, (stopTime - startTime) / 1000 / 60);
 
     const newPomodoro = {
       id: currentPomodoroId || Date.now().toString(),
       title: title.trim(),
       comment: comment.trim(),
-      completedAt: new Date().toISOString(),
-      duration: 25, // minutes
+      startTime: startTime.toISOString(),
+      completed: true,
+      completedAt: stopTime.toISOString(),
+      duration: (stopTime-startTime)/1000/60, // minutes
     };
 
     const updatedPomodoros = [newPomodoro, ...pomodoros];
@@ -168,7 +208,15 @@ const loadSound = async () => {
     setIsCompleted(false);
     setCurrentPomodoroId(null);
     
-    Alert.alert('Saved!', 'Your Pomodoro has been saved successfully.');
+    showAlert('Saved!', 
+      'Your Pomodoro has been saved successfully.',
+      [
+          {
+            text: 'OK',
+            onPress: () => stopSound(),
+          }
+      ]
+    );
   };
 
   const formatTime = (seconds) => {
@@ -244,6 +292,8 @@ const loadSound = async () => {
               <Text style={styles.buttonText}>Save Pomodoro</Text>
             </TouchableOpacity>
           )}
+
+
         </View>
 
         {/* History Section */}
@@ -256,14 +306,24 @@ const loadSound = async () => {
               <View key={pomodoro.id} style={styles.historyItem}>
                 <View style={styles.historyHeader}>
                   <Text style={styles.historyItemTitle}>{pomodoro.title}</Text>
+
+                </View>
+                <View style={styles.historyHeader}>
+                                  <Text style={styles.historyItemDate}>{formatDate(pomodoro.startTime)}</Text> 
+                  <Text style={styles.historyTimes}>to</Text>
                   <Text style={styles.historyItemDate}>{formatDate(pomodoro.completedAt)}</Text>
                 </View>
-                {pomodoro.comment && (
-                  <Text style={styles.historyItemComment}>{pomodoro.comment}</Text>
-                )}
-                <Text style={styles.historyItemDuration}>🍅 {pomodoro.duration} minutes</Text>
+                
+                <Text style={styles.historyItemDuration}>🍅 {pomodoro.duration.toFixed(2)} minutes</Text>
               </View>
-            ))
+            )  )
+          )}
+        </View>
+        <View>
+          {!isActive && !isCompleted && (
+            <TouchableOpacity style={styles.saveButton} onPress={clearPomodoros}>
+              <Text style={styles.buttonText}>Delete All Pomodoros</Text>
+            </TouchableOpacity>
           )}
         </View>
       </ScrollView>
@@ -442,6 +502,11 @@ const styles = StyleSheet.create({
     color: '#bdc3c7',
     marginBottom: 8,
     fontStyle: 'italic',
+  },
+    historyTimes: {
+    fontSize: 12,
+    color: '#e74c3c',
+    fontWeight: 'bold',
   },
   historyItemDuration: {
     fontSize: 12,
