@@ -4,7 +4,7 @@ We showed how to setup the local environment to develop React Native apps using 
 Then we looked over some of the Javascript documentation.
 Steps:
 #### install npm
-Visit npmjs.org and follow the instructions
+Visit nodejs.org and follow the instructions
 
 #### load libraries to create an app
 ``` bash
