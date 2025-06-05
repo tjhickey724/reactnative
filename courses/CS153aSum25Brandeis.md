@@ -86,7 +86,7 @@ Next week we will learn how to [Running React Native Locally](../notes/runningRN
 that will require some software installation which you ought to do over the weekend.
 
 First half of lesson -- 
-  complete Getting Started tutorial, learn about StyleSheets and Flexbox layoug
+  complete Getting Started tutorial, learn about StyleSheets and Flexbox layout
 
 Second half of lesson - 
   Get practice designing screens from scratch and using Gemini with good prompts
