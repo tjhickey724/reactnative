@@ -66,11 +66,18 @@ learning how to modify the code in the Snack IDE.
 
 
 ### Lesson 2 Thu 6/5/25
+
+__NOTE__ I don't have office today. 
+
 We cycle back and  analyze the code line-by-line to obtain a deeper
 understanding both of Javascript and of React Native. We also experiment with asking LLMs 
 to help us understand the code.
 
-Then we look at the Design document and learn [how to layout components nicely](../notes/component_layout.md) in React Native.
+Then we look at the Design document and learn [how to layout components nicely](../notes/component_layout.md) in React Native, and we get practice designing and implementing
+layouts..
+
+Time permitting, we show how to set up the software needed to 
+[Run React Native Locally](../notes/runningRNlocally.md)
 
 By the end of the week everyone should be able to create simple interactive Mobile Apps from scratch, and by proper prompting of LLMs,
 and to explain how they work, line by line.
@@ -78,6 +85,13 @@ and to explain how they work, line by line.
 Next week we will learn how to [Running React Native Locally](../notes/runningRNlocally.md) and
 that will require some software installation which you ought to do over the weekend.
 
+First half of lesson -- 
+  complete Getting Started tutorial, learn about StyleSheets and Flexbox layoug
+
+Second half of lesson - 
+  Get practice designing screens from scratch and using Gemini with good prompts
+  Try getting Gemini to build a simple app and then explain how it works...
+  Work on installing ReactNative locally
 
 ---
 
@@ -94,8 +108,7 @@ that will require some software installation which you ought to do over the week
 ---
 
 ### Lesson 3 Mon 6/9/25
-We begin by showing how to set up the software needed to 
-[Run React Native Locally](../notes/runningRNlocally.md)
+
 
 We show how to use the [file-based Expo Router](https://docs.expo.dev/develop/file-based-routing/)
 to make a multi-page app.
