@@ -109,10 +109,12 @@ Second half of lesson -
 
 ### Lesson 3 Mon 6/9/25
 
+First we review (some) student Projects and have everyone give some feedback on the ideas.
 
-We show how to use the [file-based Expo Router](https://docs.expo.dev/develop/file-based-routing/)
+
+Next, we show how to use the [file-based Expo Router](https://docs.expo.dev/develop/file-based-routing/)
 to make a multi-page app.
-We work through the examples for Stack, Tab, and Drawer navigation. We will use the file-based
+We work through the examples for Stack, Tab, (and other) navigation. We will use the file-based
 navigation approach
 
 We briefly discuss the relationaship between three front end frameworks
