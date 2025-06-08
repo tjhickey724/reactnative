@@ -12,6 +12,7 @@ Try to make the app look nice on a mobile device.
 */
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Audio } from 'expo-av';
+import { Link } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import {
   Alert,
@@ -251,6 +252,11 @@ const PomodoroApp = () => {
         <View style={styles.header}>
           <Text style={styles.headerTitle}>🍅 Pomodoro Timer</Text>
         </View>
+        <Link href="/" style={styles.linkContainer}>
+          <View style={styles.linkButton}>
+            <Text style={styles.linkText}>Go Home</Text>
+          </View>
+        </Link>
 
         {/* Timer Section */}
         <View style={styles.timerSection}>
@@ -524,6 +530,35 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#e74c3c',
     fontWeight: 'bold',
+  },
+   linkContainer: {
+    width: '100%',
+  },
+  linkButton: {
+    backgroundColor: '#ffffff',
+    paddingVertical: 24,
+    paddingHorizontal: 20,
+    borderRadius: 16,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 4,
+    borderWidth: 1,
+    borderColor: '#e9ecef',
+  },
+  linkText: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#2c3e50',
+    marginBottom: 4,
+  },
+  linkSubtext: {
+    fontSize: 14,
+    color: '#7f8c8d',
   },
 });
 
