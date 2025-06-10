@@ -163,6 +163,8 @@ for a multiscreen app.
 
 ### Lesson 5 Wed 6/11/25  APIs and JSON
 
+We start off with an introduction to using Git/Github for personal projects.
+
 We continue our discussion of useEffect but with a more real API giving the weather and accessing 
 complex json objects: 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
@@ -196,7 +198,7 @@ and submit a demo where you have modified the app in some interesting way...
 ---
 
 
-## Week 3 Accessing Phone features
+## Week 3 Accessing Phone features and Packages
 
 ---
 
@@ -271,6 +273,7 @@ TBA
 We have our final project showcase the last two days of class.
 All students give demos of their apps and answer questions.
 We also review all of the asynchronous students apps.
+
 
 ### Lesson 19 Tue 7/3/25
 We have our final project showcase the last two days of class.
