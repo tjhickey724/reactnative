@@ -147,18 +147,22 @@ Time permitting we intoduce the useEffect hook and show how to use it to access 
 
 
 ### Lesson 5 Tue 6/10/25
-We continue a ToDoList demo and explore ways to access state of parent and/or child components
+We design and build a ToDoList demo in VScode together using AI prompts
+and explore ways to access state of parent and/or child components
 We also look closely at the Javascript needed to implement this app.
-We have every synchronous student give a short description of their idea for their final app, and a quick demo of what they have now. 
+We'll have the todo list be one of several screens.
 
-All students give demos of the current version of their final projects and discuss what the
-final version should be.
+We have every student give a short description of their idea for their final app, 
+and what they plan on completing by Monday.  Synchronous students present projects
+in person.
 
-Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project
+Everyone will comment on each project, give suggestions for how it could be improved, and think about which aspects could be incorporated into your own project.
+
+In the second half of the class we'll show how the useContext hook works to provide global variables
+for a multiscreen app.
 
 ### Lesson 6 Wed 6/11/25
 
-We begin by working on a Pomodoro app and we show how to create an intial version using LLMs.
 
 We continue our discussion of useEffect but with a more real API giving the weather 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
@@ -168,6 +172,8 @@ and we'll use these to create a simplet weather phone app. This example uses the
 [axios package](https://www.npmjs.com/package/axios) instead of the built-in fetch command. Both are
 quite commonly used in web and mobile app development.
 
+We'll look at creating our own API using nodejs/express/mongodb
+
 
 ---
 
@@ -175,10 +181,7 @@ quite commonly used in web and mobile app development.
 
 
 ### Lesson 7 Thu 6/12/23
-Next we look into using the [ReactNative Storage package](https://github.com/sunnylqm/react-native-storage) which provides a way
-of persisting data when the app is closed and then reopened.
 
-We show how it is used in the [Pomorodoros Component](../code/demoSum25/)
 
 We start going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
 on creating a simple phone app using the camera and handling gestures
