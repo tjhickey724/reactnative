@@ -146,7 +146,7 @@ Time permitting we intoduce the useEffect hook and show how to use it to access 
 
 
 
-### Lesson 5 Tue 6/10/25
+### Lesson 4 Tue 6/10/25
 We design and build a ToDoList demo in VScode together using AI prompts
 and explore ways to access state of parent and/or child components
 We also look closely at the Javascript needed to implement this app.
