@@ -163,16 +163,15 @@ for a multiscreen app.
 
 ### Lesson 5 Wed 6/11/25  APIs and JSON
 
-We start off with an introduction to using Git/Github for personal projects.
+We start off with an introduction to using Git/Github for personal projects and we have everyone
+create a cs153aSum25 github repository. You can make it public for the summer.
 
 We continue our discussion of useEffect but with a more real API giving the weather and accessing 
 complex json objects: 
 [https://api.weather.gov/points/42.3,-71.1](https://api.weather.gov/points/42.3,-71.1)
 
 The file [lib/weatherAPI.js](../code/AwesomeProject/lib/weatherAPI.js) has functions for accessing these APIs
-and we'll use these to create a simplet weather phone app. This example uses the 
-[axios package](https://www.npmjs.com/package/axios) instead of the built-in fetch command. Both are
-quite commonly used in web and mobile app development.
+and we'll use these to create a simple weather phone app. 
 
 
 
