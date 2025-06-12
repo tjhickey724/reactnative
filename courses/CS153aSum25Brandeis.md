@@ -181,7 +181,7 @@ and we'll use these to create a simple weather phone app.
 
 
 
-### Lesson 7 Thu 6/12/23 Accessing Phone Features
+### Lesson 7 Thu 6/12/25 Accessing Phone Features
 
 We start by having everyone upload their final project to github.
 We'll use AI to see how do this, e.g. with this prompt:
@@ -213,26 +213,32 @@ and submit a demo where you have modified the app in some interesting way...
 ---
 
 
-### Lesson 8 Mon 6/16/23
+### Lesson 8 Mon 6/16/25
 We have all students demo the current versions of their Final Project Apps
 and give feedback to each other. We also look over the asynchronous students apps from last week
 and we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
 
-### Lesson 9 Tue 6/17/23
+### Tue 6/17/25
+I have to reschedule today's class. I will hold class on Thursday 6/19 (Juneteenth)
+at the usual time and anyone who want to attend can join me. If you want the day off you
+can watch the screen recording later.
+
+### Lesson 9 Wed 6/17/23
 We work on interacting with LLMs using an API
-
 Also we practice writing javascript for word games like wordle...
+and creating
 
 
 
-### Lesson 10 Mon 6/18/23
-TBA
+
+### Lesson 10 Thu 6/18/25
+Sharing data using Firebase/Firestore and authenticating..
 
 ---
 
 ---
 
-## Week 4 Improving the User Interface
+## Week 4 Web/Mobile apps
 
 ---
 
@@ -246,13 +252,13 @@ We have our demo day when all students give demos of their apps and review other
 We also review the asynchronous students apps....
 
 ### Lesson 12 Tue 6/24/23
-TBA
+Explore using NextJS to create React Apps which interact with React Native Apps
 
 ### Lesson 13 Wed 6/25/23
-TBA
+Explore using NodeJS/Express/Mongodb as a backend
 
 ### Lesson 14 Thu 6/26/25
-TBA
+Deployment and User Testing
 
 ---
 
@@ -268,10 +274,10 @@ TBA
 ---
 
 ### Lesson 15 Mon 6/30/25
-TBA
+Deployment
 
 ### Lesson 17 Tue 7/1/25
-TBA
+Deployment
 
 ### Lesson 18 Tue 7/2/25
 We have our final project showcase the last two days of class.
