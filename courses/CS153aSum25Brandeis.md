@@ -183,8 +183,13 @@ and we'll use these to create a simple weather phone app.
 
 ### Lesson 7 Thu 6/12/23 Accessing Phone Features
 
+We start by having everyone upload their final project to github.
+We'll use AI to see how do this, e.g. with this prompt:
+```
+How do I upload a folder to a new github site if I dont have a github account yet?
+```
 
-We start going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
+Tben we start going through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/) 
 on creating a simple phone app using the camera and handling gestures
 We continue working through [the expo.dev tutorial](https://docs.expo.dev/tutorial/introduction/)
 and we work on making our own modifications and tweaks of the code as well as making sure we fully 
