@@ -181,7 +181,7 @@ and we'll use these to create a simple weather phone app.
 
 
 
-### Lesson 7 Thu 6/12/25 Accessing Phone Features
+### Lesson 6 Thu 6/12/25 Accessing Phone Features
 
 We start by having everyone upload their final project to github.
 We'll use AI to see how do this, e.g. with this prompt:
@@ -206,6 +206,13 @@ and submit a demo where you have modified the app in some interesting way...
 
 ---
 
+NOTE:  class on Tuesday is rescheduled for Thursday.
+Since Thursday is a holiday you don't have to attend and can watch
+the video instead, but I will be on Zoom as usual. I have a medical
+procedure on Tuesday and so can't make it.
+
+---
+
 ## Week 3 Programming Projects
 * Programming Projects for Week 3 due Monday 6/22 before class, submit on the Mastery Learning App
   - Exam 3
@@ -213,17 +220,24 @@ and submit a demo where you have modified the app in some interesting way...
 ---
 
 
-### Lesson 8 Mon 6/16/25
+### Lesson 7 Mon 6/16/25
 We have all students demo the current versions of their Final Project Apps
-and give feedback to each other. We also look over the asynchronous students apps from last week
-and we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
+and give feedback to each other. We also look over the asynchronous students apps from last week.
+
+We also explore the use of AI prompting to build apps that use phone features...
+https://docs.expo.dev/versions/latest/
+and we first brainstorm about apps that require phone features and couldn't work on a web app(e.g. 
+
+We brainstorm about features to add for next week.
+
+Time permitting, we start looking at the [Gesture Handlers](https://docs.swmansion.com/react-native-gesture-handler/).  
 
 ### Tue 6/17/25
 I have to reschedule today's class. I will hold class on Thursday 6/19 (Juneteenth)
 at the usual time and anyone who want to attend can join me. If you want the day off you
 can watch the screen recording later.
 
-### Lesson 9 Wed 6/17/23
+### Lesson 8 Wed 6/17/23
 We work on interacting with LLMs using an API
 Also we practice writing javascript for word games like wordle...
 and creating
@@ -231,7 +245,7 @@ and creating
 
 
 
-### Lesson 10 Thu 6/18/25
+### Lesson 9 Thu 6/18/25
 Sharing data using Firebase/Firestore and authenticating..
 
 ---
@@ -247,17 +261,17 @@ Sharing data using Firebase/Firestore and authenticating..
 
 ---
 
-### Lesson 11 Mon 6/23/23
+### Lesson 10 Mon 6/23/23
 We have our demo day when all students give demos of their apps and review other students' apps.
 We also review the asynchronous students apps....
 
-### Lesson 12 Tue 6/24/23
+### Lesson 11 Tue 6/24/23
 Explore using NextJS to create React Apps which interact with React Native Apps
 
-### Lesson 13 Wed 6/25/23
+### Lesson 12 Wed 6/25/23
 Explore using NodeJS/Express/Mongodb as a backend
 
-### Lesson 14 Thu 6/26/25
+### Lesson 13 Thu 6/26/25
 Deployment and User Testing
 
 ---
@@ -273,19 +287,19 @@ Deployment and User Testing
 
 ---
 
-### Lesson 15 Mon 6/30/25
+### Lesson 14 Mon 6/30/25
 Deployment
 
-### Lesson 17 Tue 7/1/25
+### Lesson 15 Tue 7/1/25
 Deployment
 
-### Lesson 18 Tue 7/2/25
+### Lesson 16 Tue 7/2/25
 We have our final project showcase the last two days of class.
 All students give demos of their apps and answer questions.
 We also review all of the asynchronous students apps.
 
 
-### Lesson 19 Tue 7/3/25
+### Lesson 17 Tue 7/3/25
 We have our final project showcase the last two days of class.
 
 
