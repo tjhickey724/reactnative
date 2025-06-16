@@ -223,6 +223,8 @@ procedure on Tuesday and so can't make it.
 ### Lesson 7 Mon 6/16/25
 We have all students demo the current versions of their Final Project Apps
 and give feedback to each other. We also look over the asynchronous students apps from last week.
+We use this spreadsheet to keep track of who we have given feedback to
+https://docs.google.com/spreadsheets/d/1UdH1Rt9d7pLy-AIYrewl4c-s39UJ3Dc-y63HdiScNgI/edit?gid=0#gid=0
 
 We also explore the use of AI prompting to build apps that use phone features...
 https://docs.expo.dev/versions/latest/
