@@ -240,15 +240,44 @@ at the usual time and anyone who want to attend can join me. If you want the day
 can watch the screen recording later.
 
 ### Lesson 8 Wed 6/17/23
-We work on interacting with LLMs using an API
-Also we practice writing javascript for word games like wordle...
-and creating
+In the first half, we look into how to create a wordle game as a mobile app:
+[wordle in ReachNative](https://github.com/tjhickey724/reactnative/blob/main/code/demoSum24/components/Wordle.js)
+
+In the second half, we talk about the way the role of a software developer will likely change in the next few years.
+Most likely, developer will be using AI but they will be responsible for auditing the results and providing assurances
+that the code will run correctly, meet the requirements, and not generate errors or security leaks; they will also be
+responsible for making changes to the code to add or remove features.  
+
+We will practice this with the final projects of the synchronous students using the following strategy:
+
+1. create a prompt for the AI to build a particular mobile app (or screen from a mobile app)
+2. analyze the code to understand what it is doing
+3. cut/paste the code into an app framework to test it
+4. prompt for revisions as needed and go back to (2)
+5. when the code looks good, do a deeper analysis and make sure you fully understand how it works
+   * get help from the AI and the web if there are features you don't fully understand
+   * create a presentation where you explain how the app works and why you believe it is correct
+6. ask colleagues to review your analysis and sign off on it!
+
+Some issues that we can work out are
+1. How to build large apps that require multiple components
+2. How to build apps that require a custom webserver or database connection
+3. How to use AI to help us analyze the code and do a successful audit of the correctness and efficiency and security.
+
+
+
 
 
 
 
 ### Lesson 9 Thu 6/18/25
-Sharing data using Firebase/Firestore and authenticating..
+We start learning about creating webapps using nodejs/express.
+* [Express/Getting Started](https://expressjs.com/en/starter/installing.html)
+
+Next week we will look at connecting our app with a database
+* [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
+
+and we will show how to have our mobile app interact with the webapp to allow data sharing between users.
 
 ---
 
