@@ -321,19 +321,17 @@ the free tier of render.com and mongodb atlas
 ---
 
 ### Lesson 14 Mon 6/30/25
-We discuss other technologies (e.g. React with NextJS, NodeJS/Express with SQL)
-
-### Lesson 15 Tue 7/1/25
-We explore deployment options
-
-### Lesson 16 Wed 7/2/25
 We have our final project showcase the last two days of class.
 There are 30 students and each will prepare a 5 minute video demoing their app.
 We will watch the videos, test their apps if they are deployed, and review them.
 
+### Lesson 15 Tue 7/1/25
+Last day of class and of Final Projects
 
+### Lesson 16 Wed 7/2/25
+FINAL EXAMS - we don't have exams for this class, you can work on revising your final project!
 
 ### Lesson 17 Thu 7/3/25
-We have our final project showcase the last two days of class.
+FINAL EXAMS - we don't have exams for this class, you can work on revising your final project!
 
 
