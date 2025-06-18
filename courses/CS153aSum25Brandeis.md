@@ -241,7 +241,8 @@ can watch the screen recording later.
 
 ### Lesson 8 Wed 6/17/23
 In the first half, we look into how to create a wordle game as a mobile app:
-[wordle in ReachNative](https://github.com/tjhickey724/reactnative/blob/main/code/demoSum24/components/Wordle.js)
+[wordle in ReactNative](https://github.com/tjhickey724/reactnative/blob/main/code/demoSum24/components/Wordle.js)
+and then we see what AIs produce when asked to create a wordle app.
 
 In the second half, we talk about the way the role of a software developer will likely change in the next few years.
 Most likely, developer will be using AI but they will be responsible for auditing the results and providing assurances
