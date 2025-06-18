@@ -292,24 +292,25 @@ and we will show how to have our mobile app interact with the webapp to allow da
 
 ---
 
-### Lesson 10 Mon 6/23/23
+### Lesson 10 Mon 6/23/25
 We have our demo day when all students give demos of their apps and review other students' apps.
 We also review the asynchronous students apps....
 
-### Lesson 11 Tue 6/24/23
-Explore using NextJS to create React Apps which interact with React Native Apps
+### Lesson 11 Tue 6/24/25
+Continue learning how to create webapps with Nodejs/Express/Mongoose
 
 ### Lesson 12 Wed 6/25/23
-Explore using NodeJS/Express/Mongodb as a backend
+Explore building APIs for the mobile app communicating using JSON
 
 ### Lesson 13 Thu 6/26/25
-Deployment and User Testing
+Continue with NodeJS/Express/Mongoose and look into deployment on
+the free tier of render.com and mongodb atlas
 
 ---
 
 ---
 
-## Week 5 
+## Week 5 - Deployment and Final Project Showcase
 
 ---
 
@@ -319,18 +320,19 @@ Deployment and User Testing
 ---
 
 ### Lesson 14 Mon 6/30/25
-Deployment
+We discuss other technologies (e.g. React with NextJS, NodeJS/Express with SQL)
 
 ### Lesson 15 Tue 7/1/25
-Deployment
+We explore deployment options
 
-### Lesson 16 Tue 7/2/25
+### Lesson 16 Wed 7/2/25
 We have our final project showcase the last two days of class.
-All students give demos of their apps and answer questions.
-We also review all of the asynchronous students apps.
+There are 30 students and each will prepare a 5 minute video demoing their app.
+We will watch the videos, test their apps if they are deployed, and review them.
 
 
-### Lesson 17 Tue 7/3/25
+
+### Lesson 17 Thu 7/3/25
 We have our final project showcase the last two days of class.
 
 
