@@ -274,11 +274,13 @@ Some issues that we can work out are
 ### Lesson 9 Thu 6/18/25
 We start learning about creating webapps using nodejs/express.
 * [Express/Getting Started](https://expressjs.com/en/starter/installing.html)
+Today we will focus on creating express apps that generate HTML and interact with the user
+We will compare and contrast it with ReactNative.
 
-Next week we will look at connecting our app with a database
-* [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
-
+We will show how to use AIs to generate simple express routers
 and we will show how to have our mobile app interact with the webapp to allow data sharing between users.
+(We may need to use ngrok to have a https proxy for our local webapp...)
+
 
 ---
 
@@ -296,6 +298,9 @@ and we will show how to have our mobile app interact with the webapp to allow da
 ### Lesson 10 Mon 6/23/25
 We have our demo day when all students give demos of their apps and review other students' apps.
 We also review the asynchronous students apps....
+Time permitting, we will look at connecting our app with a database
+* [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
+
 
 ### Lesson 11 Tue 6/24/25
 Continue learning how to create webapps with Nodejs/Express/Mongoose
