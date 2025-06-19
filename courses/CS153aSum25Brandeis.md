@@ -271,15 +271,16 @@ Some issues that we can work out are
 
 
 
-### Lesson 9 Thu 6/18/25
-We start learning about creating webapps using nodejs/express.
-* [Express/Getting Started](https://expressjs.com/en/starter/installing.html)
+### Lesson 9 Thu 6/18/25 Juneteenth
+We start learning about creating webapps using nodejs/express and we firstgo through the Getting Started tutorial
+of the [Express website](https://expressjs.com)
+
 Today we will focus on creating express apps that generate HTML and interact with the user
 We will compare and contrast it with ReactNative.
 
-We will show how to use AIs to generate simple express routers
+Then we give a master class on how to use AIs to generate simple express routers
 and we will show how to have our mobile app interact with the webapp to allow data sharing between users.
-(We may need to use ngrok to have a https proxy for our local webapp...)
+(We may need to use [ngrok](https://ngrok.com/) to have a https proxy for our local webapp...)
 
 
 ---
