@@ -299,6 +299,9 @@ and we will show how to have our mobile app interact with the webapp to allow da
 ### Lesson 10 Mon 6/23/25
 We have our demo day when all students give demos of their apps and review other students' apps.
 We also review the asynchronous students apps....
+
+Then we will give an intro to HTML and CSS
+
 Time permitting, we will look at connecting our app with a database
 * [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
 
