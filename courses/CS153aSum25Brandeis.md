@@ -297,10 +297,20 @@ and we will show how to have our mobile app interact with the webapp to allow da
 ---
 
 ### Lesson 10 Mon 6/23/25
-We have our demo day when all students give demos of their apps and review other students' apps.
+The goal for this week is to have everyone be able to build a simple NodeJS/Express website
+and to be able deploy it to the cloud and interact with it using a mobile app.
+
+Your final projects are due next Monday so that is what you should focus on. The other assignments
+can be completed next week before the last day of class (Thursday 7/3/2025).
+
+We start by looking at the current creative projects CP3
+and have all synchronous students give demos of their apps (if they have them) and review other students' apps.
 We also review the asynchronous students apps....
 
-Then we will give an intro to HTML and CSS
+Then we review the steps need to create an [Express website](https://expressjs.com).
+
+Then we will give an [intro to HTML and CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core)
+by creating routes and views in our server.
 
 Time permitting, we will look at connecting our app with a database
 * [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
@@ -308,6 +318,8 @@ Time permitting, we will look at connecting our app with a database
 
 ### Lesson 11 Tue 6/24/25
 Continue learning how to create webapps with Nodejs/Express/Mongoose
+We'll create apps that use email/passworld authentication and maintain
+a key/value store in a mongo database in the cloud.
 
 ### Lesson 12 Wed 6/25/23
 Explore building APIs for the mobile app communicating using JSON
