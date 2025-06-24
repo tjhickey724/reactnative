@@ -312,13 +312,46 @@ Then we review the steps need to create an [Express website](https://expressjs.c
 Then we will give an [intro to HTML and CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core)
 by creating routes and views in our server.
 
-Time permitting, we will look at connecting our app with a database
-* [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
 
 
 ### Lesson 11 Tue 6/24/25
-Continue learning how to create webapps with Nodejs/Express/Mongoose
-We'll create apps that use email/passworld authentication and maintain
+We begin by reviewing how to succeed in this class (as all work has to be submitted by 7/3 before midnight). The grade
+is based on the percentage of skills you master.  
+
+There are 16 skills
+* the programming project skills proj1 proj2 proj3 proj4 -- if you demonstrate mastery of any of the projN skils, you automatically get credit for all of the previous ones, whether you submitted them or not
+* the other programming skills
+* a participation skill, which is the proportion of participation questions you answered with a good faith effort.
+
+If  you master S skils, your grade will be 20+5*S.  That is I'll give you 20 points for free and then each skill is worth 5 points.
+
+---
+
+Our goal for this week is show how to use an AI to develop a simple key/value store (like async storage) in the cloud
+and to access it from a ReactNative App.  We will use the Free Tier of the MongoDB Atlas site for the database
+and we will use the Free Tier of render.com for hosting the server. 
+
+---
+
+Today, we will look at connecting our app with a database
+* [Express/Mongoose](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs)
+
+We will a mongodb database in the Atlas cluster. You should create your own (ask gemini how),
+but for now you can use the connection string below where you replace __YourUserName__ with your Brandeis email id.
+***Don't include this in any code you push to github***. We'll show you how to use a dotenv file to keep API keys and
+other secrets out of github.
+```
+mongodb+srv://cs153aSum25:wXUe6ERKJR3eYnNt@cs153a.oxt8bfj.mongodb.net/YourUserName?retryWrites=true&w=majority&appName=CS153a
+```
+I will cancel this connection string after the class is over, so its better that you create your own if you want to 
+continue working on this project.
+
+You can set up your own free mongodb connection by asking gemini or claude how to do it, e.g.
+```
+How do I setup a Mongodb Atlas account on the free tier?
+```
+
+Today, we'll work with gemini to create an app that uses email/passworld authentication and maintains
 a key/value store in a mongo database in the cloud.
 
 ### Lesson 12 Wed 6/25/23
@@ -342,17 +375,25 @@ the free tier of render.com and mongodb atlas
 ---
 
 ### Lesson 14 Mon 6/30/25
-We have our final project showcase the last two days of class.
+We look into deploying apps for Testing on iOS and on Android.
+We will use TestFlight for iOS and .apk files for Android.
+
+### Lesson 15 Tue 7/1/25
+We have our final project showcase the last day of class.
 There are 30 students and each will prepare a 5 minute video demoing their app.
 We will watch the videos, test their apps if they are deployed, and review them.
 
-### Lesson 15 Tue 7/1/25
-Last day of class and of Final Projects
 
 ### Lesson 16 Wed 7/2/25
 FINAL EXAMS - we don't have exams for this class, you can work on revising your final project!
 
 ### Lesson 17 Thu 7/3/25
 FINAL EXAMS - we don't have exams for this class, you can work on revising your final project!
+
+___
+
+***All work for this class needs to be submitted before midnight on Thu 7/3/2025.***
+
+
 
 
