@@ -349,7 +349,7 @@ but for now you can use the connection string below where you replace __YourUser
 ***Don't include this in any code you push to github***. We'll show you how to use a dotenv file to keep API keys and
 other secrets out of github.
 ```
-mongodb+srv://cs153aSum25:wXUe6ERKJR3eYnNt@cs153a.oxt8bfj.mongodb.net/YourUserName?retryWrites=true&w=majority&appName=CS153a
+This connection string is on our moodle page and is likely to change...
 ```
 I will cancel this connection string after the class is over, so its better that you create your own if you want to 
 continue working on this project.
