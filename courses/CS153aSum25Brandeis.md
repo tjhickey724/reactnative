@@ -362,6 +362,12 @@ How do I setup a Mongodb Atlas account on the free tier?
 Today, we'll work with gemini to create an app that uses email/passworld authentication and maintains
 a key/value store in a mongo database in the cloud.
 
+[Here](https://github.com/Yuxuan61305/key_value_store_app) is the code we developed today.
+We also created Mongodb connection strings from mongodb.com to connect to a database,
+and we uploaded the github repository to render.com where it is running at
+[https://key-value-store-app.onrender.com/register](https://key-value-store-app.onrender.com/register)
+though it may be taken down in a few weeks...
+
 ### Lesson 12 Wed 6/25/23
 Explore building APIs for the mobile app communicating using JSON
 
