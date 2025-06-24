@@ -324,6 +324,10 @@ There are 16 skills
 
 If  you master S skils, your grade will be 20+5*S.  That is I'll give you 20 points for free and then each skill is worth 5 points.
 
+All course work must be submitted by Thu 7/3/2025 before midnight. This is the one hard deadline in the course and can't be
+extended because I have a full schedule for the rest of the summer with things I can not reschedule.
+
+
 ---
 
 ### Lesson 11 Tue 6/24/25
