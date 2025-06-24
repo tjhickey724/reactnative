@@ -312,11 +312,10 @@ Then we review the steps need to create an [Express website](https://expressjs.c
 Then we will give an [intro to HTML and CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core)
 by creating routes and views in our server.
 
+---
 
-
-### Lesson 11 Tue 6/24/25
-We begin by reviewing how to succeed in this class (as all work has to be submitted by 7/3 before midnight). The grade
-is based on the percentage of skills you master.  
+### How to succeed in this course
+The course grade is based on the percentage of skills you master.  
 
 There are 16 skills
 * the programming project skills proj1 proj2 proj3 proj4 -- if you demonstrate mastery of any of the projN skils, you automatically get credit for all of the previous ones, whether you submitted them or not
@@ -326,6 +325,11 @@ There are 16 skills
 If  you master S skils, your grade will be 20+5*S.  That is I'll give you 20 points for free and then each skill is worth 5 points.
 
 ---
+
+### Lesson 11 Tue 6/24/25
+We begin by reviewing how to succeed in this class (as all work has to be submitted by 7/3 before midnight). 
+
+
 
 Our goal for this week is show how to use an AI to develop a simple key/value store (like async storage) in the cloud
 and to access it from a ReactNative App.  We will use the Free Tier of the MongoDB Atlas site for the database
