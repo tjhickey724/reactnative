@@ -383,8 +383,11 @@ and then can store key/value pairs and retrieve key/value pairs from the webapp.
 
 Here is a link to the github site of the webserver with the API for mobile apps
 https://github.com/Yuxuan61305/key_value_store_app.git
+and here is the website running on render.com
+https://key-value-store-app.onrender.com/store
+You should visit this website to start up the app. before trying to use the mobile app below.
 
-Here is a link to a zip file of the ReactNative Mobile App that access that webapp
+Here is a link to a zip file of the ReactNative Mobile App that accesses that webapp
 [mobile app](../code/ApiDemo.zip)
 
 ### Lesson 13 Thu 6/26/25
