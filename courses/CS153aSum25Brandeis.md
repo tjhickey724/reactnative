@@ -369,11 +369,22 @@ and we uploaded the github repository to render.com where it is running at
 though it may be taken down in a few weeks...
 
 ### Lesson 12 Wed 6/25/23
-Explore building APIs for the mobile app communicating using JSON
+No office hours for Tim this afternoon....
+
+Explore building APIs for the mobile app communicating using JSON.
+Today we show how to use the AIs to create a mobile app that connects to a web app with a secure email/password connection
+and then can store key/value pairs and retrieve key/value pairs from the webapp. We do this in two steps:
+1. extend the web app so that it has an API to allow ReactNative apps to register/login/store key/val, lookup key, remove key
+2. create a mobile app with the same features
+3. then we critique the system, look for ways it could be improved, including
+  * using salted hashing for passwords
+  * using a separate collection for the key/value pairs
+  * designing and creating a social networking friends collection
 
 ### Lesson 13 Thu 6/26/25
-Continue with NodeJS/Express/Mongoose and look into deployment on
-the free tier of render.com and mongodb atlas
+Continue with the NodeJS/Express/Mongoose/ReactNative/MongoDB/Render deployment.
+Look into deploying mobile apps to the App stores for testing 
+Extend and deploy the Pomodoro App...
 
 ---
 
