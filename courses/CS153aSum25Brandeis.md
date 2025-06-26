@@ -384,13 +384,31 @@ and then can store key/value pairs and retrieve key/value pairs from the webapp.
 Here is a link to the github site of the webserver with the API for mobile apps
 https://github.com/Yuxuan61305/key_value_store_app.git
 and here is the website running on render.com
-https://key-value-store-app.onrender.com/store
+https://key-value-store-app.onrender.com
 You should visit this website to start up the app. before trying to use the mobile app below.
 
 Here is a link to a zip file of the ReactNative Mobile App that accesses that webapp
 [mobile app](../code/ApiDemo.zip)
 
 ### Lesson 13 Thu 6/26/25
+We begin by reviewing the web/mobile app we created yesterday...
+Although it seemed to work on the web, it has some problems with authentication.
+
+Yesterday we showed how to
+* create a simple databased backed server using nodejs/express/mongodb to implement a key/value API using email/password authentication
+* deploy that server to the cloud using render.com
+* test the server using Postman
+* create a simple ReactNative app interacting with the webapp
+* test its web version
+
+Unfortunately, looking deeper at the code, I realized that it relies on cookies and that ReactNative apps running on devices don't handle cookies the same way web browsers do, so our app would work on the web but not on mobile devices. This is a challenge of using the AIs
+as assistants. It means you need to do much more testing and analysis of your data.
+
+Today, we'll try a simpler approach for testing and implement key/value API that doesn't
+require authentication 
+
+
+
 Continue with the NodeJS/Express/Mongoose/ReactNative/MongoDB/Render deployment.
 Look into deploying mobile apps to the App stores for testing 
 Extend and deploy the Pomodoro App...
