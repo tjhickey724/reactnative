@@ -413,6 +413,17 @@ Continue with the NodeJS/Express/Mongoose/ReactNative/MongoDB/Render deployment.
 Look into deploying mobile apps to the App stores for testing 
 Extend and deploy the Pomodoro App...
 
+Here is the key value server we created in NodeJS/Express
+https://github.com/TriKTPhan/kv-api-server
+
+and here is the key value client
+https://github.com/TriKTPhan/kv-client
+
+and here is the server running on render.com
+https://kv-api-server.onrender.com/api/kv
+You need to visit this to start it up, and it will shut down after a few minutes of inactivity
+losing all of the key/value pairs.  We could add persistence with mongodb if wanted, but we don't have it now.
+
 ---
 
 ---
