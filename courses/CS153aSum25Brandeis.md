@@ -458,7 +458,8 @@ on [this google doc](https://docs.google.com/document/d/1OTfLbd1opf6YZK_8OOhD0id
 
 
 ### Lesson 15 Tue 7/1/25
-Today we continue reviewing final projects.
+Today we continue reviewing asynchronous final projects and discussing the videos in depth, especially
+looking into the way they used AI!
 
 
 ### Lesson 16 Wed 7/2/25
