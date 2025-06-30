@@ -440,8 +440,9 @@ losing all of the key/value pairs.  We could add persistence with mongodb if wan
 ### Lesson 14 Mon 6/30/25
 This is the last week of class. All work is due by 7/3 before midnight.
 There are 4 project skills (and you can submit your final project for all 4) and 11 other skills.
-Participation counts as 1 skill, and I'll give you a skill for extra credit if you complete a survey
-that I'll distribute tomorrow exploring how you individually learned in this course.
+Participation counts as 1 skill, and I'll give you one skill for extra credit if you complete 
+[this survey](https://docs.google.com/forms/d/e/1FAIpQLSfBJsI-NascRQ5FQdeB4nPoEHjalq1uL4neBBFK2i-SN9PZVg/viewform?usp=dialog)
+exploring how you individually learned in this course.
 
 If you get N skills mastered in this class, then your grade will be 20 + 5*N as each skill is worth 5 points.
 I may curve the grades if I think they don't accurately reflect your learning. 
