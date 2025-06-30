@@ -438,13 +438,24 @@ losing all of the key/value pairs.  We could add persistence with mongodb if wan
 ---
 
 ### Lesson 14 Mon 6/30/25
-We look into deploying apps for Testing on iOS and on Android.
-We will use TestFlight for iOS and .apk files for Android.
+This is the last week of class. All work is due by 7/3 before midnight.
+There are 4 project skills (and you can submit your final project for all 4) and 11 other skills.
+Participation counts as 1 skill, and I'll give you a skill for extra credit if you complete a survey
+that I'll distribute tomorrow exploring how you individually learned in this course.
+
+If you get N skills mastered in this class, then your grade will be 20 + 5*N as each skill is worth 5 points.
+I may curve the grades if I think they don't accurately reflect your learning. 
+
+One of the major goals of this course is to have you learn how to use AIs to develop ReactNative and Express
+apps, and to help you understand how they work.
+
+Today we'll start looking at submitted projects and discuss them in class. You have until 7/3 to submit a
+regrade request if you want to modify your projects (or any of your code). Please submit your work as soon as possible so you'll have an opportunity to submit a regrade request if you don't fully master the skill.
+
+
 
 ### Lesson 15 Tue 7/1/25
-We have our final project showcase the last day of class.
-There are 30 students and each will prepare a 5 minute video demoing their app.
-We will watch the videos, test their apps if they are deployed, and review them.
+Today we continue reviewing final projects.
 
 
 ### Lesson 16 Wed 7/2/25
