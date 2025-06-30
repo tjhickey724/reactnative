@@ -452,6 +452,8 @@ apps, and to help you understand how they work.
 Today we'll start looking at submitted projects and discuss them in class. You have until 7/3 to submit a
 regrade request if you want to modify your projects (or any of your code). Please submit your work as soon as possible so you'll have an opportunity to submit a regrade request if you don't fully master the skill.
 
+We will keep track of the Strategies that we are using to leverage AI to help develop web and mobile apps
+on [this google doc](https://docs.google.com/document/d/1OTfLbd1opf6YZK_8OOhD0idm7KKRfoSa5UZuoxSgOpc/edit?usp=sharing)
 
 
 ### Lesson 15 Tue 7/1/25
