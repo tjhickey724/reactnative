@@ -458,6 +458,11 @@ on [this google doc](https://docs.google.com/document/d/1OTfLbd1opf6YZK_8OOhD0id
 
 
 ### Lesson 15 Tue 7/1/25
+There is a Mastery Learning App question about how long it took you to complete the Extra Credit Survey.
+When the graders see you have answered the survey they'll give you credit for that question.
+
+Remember all work must be completed by Thursday 7/3 before midnight.  That is the one hard deadline of the course. 
+
 Today we continue reviewing asynchronous final projects and discussing the videos in depth, especially
 looking into the way they used AI!
 
