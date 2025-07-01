@@ -466,6 +466,15 @@ Remember all work must be completed by Thursday 7/3 before midnight.  That is th
 Today we continue reviewing asynchronous final projects and discussing the videos in depth, especially
 looking into the way they used AI!
 
+We will end the class with a discussion of possible ways that people might use ReactNative in the future,
+and we'll experiment with asking the AIs to write code to do that.... 
+
+Note that coding with an AI still requires two additional steps:
+1. creating a good prompt (and possibly refining it) to get a good possible solution
+2. analyzing and testing the code to verify that it does actually meet the requirements
+
+Both steps require a certain level of maturity in understanding the language and framework that the program will use (e.g. Reactnative, React, NodeJS/Express, MongoDB, Firebase, etc.)  The AI can help explain what you need to know to do steps 1 and 2, but you do have to have mastered a certain core level of understanding to effectively create good prompts and to run/debug/test/analyze and deploy the result.
+
 
 ### Lesson 16 Wed 7/2/25
 FINAL EXAMS - we don't have exams for this class, you can work on revising your final project!
